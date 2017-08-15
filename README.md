@@ -4,7 +4,7 @@
 
 https://codex.wordpress.org/Installing_WordPress_Locally_on_Your_Mac_With_MAMP
 
-## These are the sppecific MAMP settings you should be using:
+## These are the specific MAMP settings you should be using:
 * Wordpress location: /Applications/MAMP/htdocs/wordpress
 * PHP settings: 7.0.15
 * Database: wordpress_local
