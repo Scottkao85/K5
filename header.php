@@ -26,6 +26,10 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-header-wrapper">
+			<div class="header-contact">
+				<a href="#" class="contact-email">something@email.com</a>
+				<p class="contact-phone">555.555.5555</p>
+			</div>
 			<div class="site-branding">
 				<?php shoreditch_the_custom_logo(); ?>
 
