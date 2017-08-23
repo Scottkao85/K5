@@ -1,0 +1,13 @@
+@mixin font($type) {
+	@if $type == 'serif' {
+		font-family: 'Droid Serif', serif;
+		color: blue;
+	}@else $type == "sans" {
+		font-family: 'Lato', Helvetica, sans-serif;
+	}@else {
+		@error "the options are serif or sans for fonts"
+}
+
+body {
+	@include font('serif');
+}
