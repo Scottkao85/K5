@@ -1,2 +1,6 @@
-.color {
-  background: black; }
+html {
+  font-family: 'Droid Serif', Helvetica, serif; }
+
+.site-header .header-contact {
+  display: flex;
+  justify-content: flex-end; }
