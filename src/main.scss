@@ -1,5 +1,13 @@
 // main styles for k5
 @import 'shared/colors';
-// @import 'shared/fonts';
+@import 'shared/fonts';
 // @import 'shared/images';
 // @import 'shared/forms';
+
+// header
+.site-header {
+	.header-contact {
+		display: flex;
+		justify-content: flex-end;
+	}
+}

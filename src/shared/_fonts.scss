@@ -1,0 +1,7 @@
+@mixin font($type) {
+	@if $type == 'serif' {
+		font-family: 'Droid Serif', Helvetica, serif;
+	}@else {
+		font-family: 'Lato', Helvetica, sans-serif;
+	}
+}
