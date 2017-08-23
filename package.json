@@ -1,0 +1,11 @@
+{
+  "name": "k5",
+  "version": "1.0.0",
+  "description": "simple WP site for K5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Megan Prior Pfeifer & Scott Kao",
+  "license": "ISC"
+}
