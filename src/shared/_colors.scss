@@ -1,1 +1,30 @@
 // colors for k5
+$colors: (
+	'primary': #BF9969,
+	'secondary': #285973,
+	'tertiary-1': #735733,
+	'tertiary-2': #FFD8A6,
+	'tertiary-3': #69A2BF
+);
+
+@function palette($key) {
+	@return map-get($colors, $key);
+}
+
+@each $name, $color in $colors {
+  .color {
+    &-#{$name}{
+      background-color: $color;
+      //  create variations (if not black or white)
+      @if $color != white and $color != black {
+        &.extra-light { background-color: rgba($color, .1); }
+        &.light       { background-color: rgba($color, .3); }
+        &.semi-light  { background-color: rgba($color, .7); }
+        &.extra-dark  { background-color: mix($color, black, 10%); }
+        &.dark        { background-color: mix($color, black, 30%); }
+        &.semi-dark   { background-color: mix($color, black, 70%); }
+        &.gradient	  { background: linear-gradient(135deg, mix($color, black, 50%), mix($color, black, 30%));}
+      }
+    }
+  }
+}
