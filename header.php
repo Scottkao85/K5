@@ -27,8 +27,9 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-header-wrapper">
 			<div class="header-contact">
-				<a href="#" class="contact-email">something@email.com</a>
-				<p class="contact-phone">555.555.5555</p>
+				<a href="#" class="contact-email">something@email.com </a>
+				<p class="contact-phone"><span> | </span>555.555.5555</p>
+				<button class="button button-primary button-condensed">Get a free quote</button>
 			</div>
 			<div class="site-branding">
 				<?php shoreditch_the_custom_logo(); ?>
@@ -39,11 +40,12 @@
 					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php endif; ?>
 				<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-			</div><!-- .site-branding -->
+			</div>
+			<!-- .site-branding -->
 
 			<?php if ( has_nav_menu( 'primary' ) ) : ?>
 				<button id="menu-toggle" class="menu-toggle"><?php esc_html_e( 'Menu', 'shoreditch' ); ?></button>
-				<div id="site-menu" class="site-menu">
+				<div id="site-menu" class="site-menu color-primary dark-trans">
 					<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_html_e( 'Primary Menu', 'shoreditch' ); ?>">
 						<?php
 						wp_nav_menu( array(
