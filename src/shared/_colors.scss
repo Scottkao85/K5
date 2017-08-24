@@ -4,8 +4,11 @@ $colors: (
 	'secondary': #285973,
 	'tertiary-1': #735733,
 	'tertiary-2': #FFD8A6,
-	'tertiary-3': #69A2BF
+	'tertiary-3': #69A2BF,
 );
+
+$black: #030303;
+$white: #fff;
 
 @function palette($key) {
 	@return map-get($colors, $key);
@@ -24,6 +27,7 @@ $colors: (
         &.dark        { background-color: mix($color, black, 30%); }
         &.semi-dark   { background-color: mix($color, black, 70%); }
         &.gradient	  { background: linear-gradient(135deg, mix($color, black, 50%), mix($color, black, 30%));}
+        &.dark-trans  { background-color: rgba(mix($color, black, 30%), .5); }
       }
     }
   }
