@@ -7,13 +7,24 @@
 
 // header
 .site-header {
+
 	.site-header-wrapper {
 		width: 100%;
+
 		.header-contact {
 			display: flex;
 			justify-content: flex-end;
 			width: 100%;
 			background-color: palette(secondary);
+			.button-wrapper {
+				display: inline-block;
+			}
+			.contact-email,
+			.contact-phone,
+			.button-wrapper {
+				color: $white;
+				margin: 1em 0.5em;
+			}
 		}
 		.site-branding {
 			margin-top: 6px;

@@ -27,9 +27,11 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-header-wrapper">
 			<div class="header-contact">
-				<a href="#" class="contact-email">something@email.com </a>
-				<p class="contact-phone"><span> | </span>555.555.5555</p>
-				<button class="button button-primary button-condensed">Get a free quote</button>
+				<a href="#" class="contact-email">something@email.com</a>
+				<p class="contact-phone"><span> |  </span>555.555.5555</p>
+				<div class="button-wrapper">
+					<button class="button button-primary button-condensed">Get a free quote</button>
+				</div>
 			</div>
 			<div class="site-branding">
 				<?php shoreditch_the_custom_logo(); ?>
