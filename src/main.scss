@@ -20,12 +20,17 @@
 	}
 	.site-menu {
 		width: 100%;
-		background-color: palette(primary);
+		// background-color: palette(primary);
 		.main-navigation {
 			margin-top: 0;
 		}
 		.primary-menu {
 			justify-content: center;
+			a {
+				color: white;
+				border-bottom: none;
+				padding: 15px 0;
+			}
 		}
 	}
 }
