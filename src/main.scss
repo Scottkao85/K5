@@ -1,6 +1,7 @@
 // main styles for k5
 @import 'shared/colors';
 @import 'shared/fonts';
+@import 'shared/buttons';
 // @import 'shared/images';
 // @import 'shared/forms';
 
@@ -20,7 +21,6 @@
 	}
 	.site-menu {
 		width: 100%;
-		// background-color: palette(primary);
 		.main-navigation {
 			margin-top: 0;
 		}
