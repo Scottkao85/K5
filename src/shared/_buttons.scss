@@ -1,0 +1,43 @@
+// buttons for k5
+
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return $black; // Lighter backgorund, return dark color
+  } @else {
+    @return $white; // Darker background, return light color
+  }
+}
+
+.button, button, input[type="button"], input[type="reset"], input[type="submit"] {
+  font-weight: normal;
+  font-size: 18px;
+  padding: 15px 40px;
+  box-shadow: 0 1px 3px 2px rgba($black, .3);
+  transition: background-color .25s, box-shadow .25s;
+  line-height: 1;
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  &.button-condensed {
+    padding: 9px 30px;
+  }
+
+  @each $name, $color in $colors {
+    &.button {
+      &-#{$name} {
+        background-color: $color;
+        color: set-text-color($color);
+
+        &:hover {
+          background-color: mix($color, $black, 70%);
+        }
+
+        &:active, &:focus {
+          background-color: mix($color, $white, 70%);
+        }
+      }
+    }
+  }
+}
