@@ -6,8 +6,26 @@
 
 // header
 .site-header {
-	.header-contact {
-		display: flex;
-		justify-content: flex-end;
+	.site-header-wrapper {
+		width: 100%;
+		.header-contact {
+			display: flex;
+			justify-content: flex-end;
+			width: 100%;
+			background-color: palette(secondary);
+		}
+		.site-branding {
+			margin-top: 6px;
+		}
+	}
+	.site-menu {
+		width: 100%;
+		background-color: palette(primary);
+		.main-navigation {
+			margin-top: 0;
+		}
+		.primary-menu {
+			justify-content: center;
+		}
 	}
 }
