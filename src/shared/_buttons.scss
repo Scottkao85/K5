@@ -8,7 +8,7 @@
   }
 }
 
-button, .button {
+.button, button, input[type="button"], input[type="reset"], input[type="submit"] {
   font-weight: normal;
   font-size: 18px;
   padding: 15px 40px;
