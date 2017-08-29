@@ -7,17 +7,17 @@
 
 // header
 .site-header {
-	// width: 100%;
-	// margin: 0 auto;
 
 	.contact-header-wrapper {
 		width: 100%;
 		background-color: palette(secondary);
+		position: relative;
 
 		.header-contact {
 			display: flex;
 			justify-content: flex-end;
-			width: 100%;
+			width: 90%;
+			background-color: palette(secondary);
 			.button-wrapper {
 				display: inline-block;
 			}
