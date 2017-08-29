@@ -7,15 +7,17 @@
 
 // header
 .site-header {
+	// width: 100%;
+	// margin: 0 auto;
 
-	.site-header-wrapper {
+	.contact-header-wrapper {
 		width: 100%;
+		background-color: palette(secondary);
 
 		.header-contact {
 			display: flex;
 			justify-content: flex-end;
 			width: 100%;
-			background-color: palette(secondary);
 			.button-wrapper {
 				display: inline-block;
 			}
@@ -26,21 +28,23 @@
 				margin: 1em 0.5em;
 			}
 		}
-		.site-branding {
-			margin-top: 6px;
-		}
 	}
-	.site-menu {
-		width: 100%;
-		.main-navigation {
-			margin-top: 0;
+	.menu-header-wrapper {
+		.site-branding {
+			margin-top: 4px;
 		}
-		.primary-menu {
-			justify-content: center;
-			a {
-				color: white;
-				border-bottom: none;
-				padding: 15px 0;
+		.site-menu {
+			width: 100%;
+			.main-navigation {
+				margin-top: 0;
+			}
+			.primary-menu {
+				justify-content: center;
+				a {
+					color: white;
+					border-bottom: none;
+					padding: 15px 0;
+				}
 			}
 		}
 	}

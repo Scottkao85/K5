@@ -25,14 +25,16 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'shoreditch' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-header-wrapper">
+		<div class="contact-header-wrapper">
 			<div class="header-contact">
 				<a href="#" class="contact-email">something@email.com</a>
-				<p class="contact-phone"><span> |  </span>555.555.5555</p>
+				<p class="contact-phone"><span> | </span>555.555.5555</p>
 				<div class="button-wrapper">
 					<button class="button button-primary button-condensed">Get a free quote</button>
 				</div>
 			</div>
+		</div>
+		<div class="menu-header-wrapper">
 			<div class="site-branding">
 				<?php shoreditch_the_custom_logo(); ?>
 
@@ -58,7 +60,7 @@
 					</nav><!-- .main-navigation -->
 				</div><!-- .site-menu -->
 			<?php endif; ?>
-		</div><!-- .site-header-wrapper -->
+		</div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
