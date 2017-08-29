@@ -3,6 +3,7 @@
 @import 'shared/fonts';
 @import 'shared/buttons';
 @import 'shared/icons';
+// @import 'shared/images';
 // @import 'shared/forms';
 
 // header
@@ -47,5 +48,8 @@
 				}
 			}
 		}
+	.header-contact {
+		display: flex;
+		justify-content: flex-end;
 	}
 }
