@@ -3,34 +3,53 @@
 @import 'shared/fonts';
 @import 'shared/buttons';
 @import 'shared/icons';
+// @import 'shared/images';
 // @import 'shared/forms';
 
 // header
 .site-header {
-	.site-header-wrapper {
+
+	.contact-header-wrapper {
 		width: 100%;
+		background-color: palette(secondary);
+		position: relative;
+
 		.header-contact {
 			display: flex;
 			justify-content: flex-end;
-			width: 100%;
+			width: 90%;
 			background-color: palette(secondary);
-		}
-		.site-branding {
-			margin-top: 6px;
-		}
-	}
-	.site-menu {
-		width: 100%;
-		.main-navigation {
-			margin-top: 0;
-		}
-		.primary-menu {
-			justify-content: center;
-			a {
-				color: white;
-				border-bottom: none;
-				padding: 15px 0;
+			.button-wrapper {
+				display: inline-block;
+			}
+			.contact-email,
+			.contact-phone,
+			.button-wrapper {
+				color: $white;
+				margin: 1em 0.5em;
 			}
 		}
+	}
+	.menu-header-wrapper {
+		.site-branding {
+			margin-top: 4px;
+		}
+		.site-menu {
+			width: 100%;
+			.main-navigation {
+				margin-top: 0;
+			}
+			.primary-menu {
+				justify-content: center;
+				a {
+					color: white;
+					border-bottom: none;
+					padding: 15px 0;
+				}
+			}
+		}
+	.header-contact {
+		display: flex;
+		justify-content: flex-end;
 	}
 }

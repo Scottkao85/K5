@@ -25,12 +25,16 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'shoreditch' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-header-wrapper">
+		<div class="contact-header-wrapper">
 			<div class="header-contact">
-				<a href="#" class="contact-email">something@email.com </a>
+				<a href="#" class="contact-email">something@email.com</a>
 				<p class="contact-phone"><span> | </span>555.555.5555</p>
-				<button class="button button-primary button-condensed">Get a free quote</button>
+				<div class="button-wrapper">
+					<button class="button button-primary button-condensed">Get a free quote</button>
+				</div>
 			</div>
+		</div>
+		<div class="menu-header-wrapper">
 			<div class="site-branding">
 				<?php shoreditch_the_custom_logo(); ?>
 
@@ -56,14 +60,9 @@
 					</nav><!-- .main-navigation -->
 				</div><!-- .site-menu -->
 			<?php endif; ?>
-		</div><!-- .site-header-wrapper -->
+		</div>
 	</header><!-- #masthead -->
-
 	<div id="content" class="site-content">
 		<?php if ( get_header_image() ) : ?>
-			<div class="header-image">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<img src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
-				</a>
-			</div><!-- .header-image -->
+			
 		<?php endif; // End header image check. ?>
