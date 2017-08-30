@@ -55,7 +55,49 @@
 	}
 }
 
-// about k5 //
+//*** home page ***//
+// hero
+.post-49 {
+
+}
+
+// proven
+.post-51 {
+
+}
+
+// handle hard part
+.post-71 {
+
+}
+
+// with K5
+.post-80 {
+
+}
+
+// k5 Believe
+.post-86 {
+
+}
+
+//*** How We Buy Homes ***//
+// hero
+.post-131 {
+
+}
+
+// when you're ready
+.post-139 {
+
+}
+
+// ways we've helped
+.post-150 {
+
+}
+
+//*** about k5 ***//
 // hero
 .post-106 {
 
@@ -73,11 +115,17 @@
 
 // meet the team
 .post-114 {
+	h2 {
+		display: flex;
+		justify-content: center;
+		padding-top: 50px;
+	}
 	.testimonial-entry {
 		display: flex;
 		flex-direction: column-reverse;
+		margin-bottom: 0;
 		.testimonial-entry-content {
-
+			margin-bottom: 0;
 		}
 		.testimonial-entry-title {
 			display: flex;
