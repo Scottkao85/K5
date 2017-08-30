@@ -8,7 +8,7 @@ $colors: (
 );
 
 $black: #030303;
-$white: #fff;
+$white: #F8F4F0;
 
 @function palette($key) {
 	@return map-get($colors, $key);
