@@ -73,5 +73,20 @@
 
 // meet the team
 .post-114 {
+	.testimonial-entry {
+		display: flex;
+		flex-direction: column-reverse;
+		.testimonial-entry-content {
 
+		}
+		.testimonial-entry-title {
+			display: flex;
+			justify-content: flex-end;
+		}
+		.testimonial-featured-image {
+			display: flex;
+			justify-content: flex-start;
+			margin: 0;
+		}
+	}
 }
