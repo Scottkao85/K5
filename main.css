@@ -228,4 +228,6 @@
   .post-114 .testimonial-entry .testimonial-featured-image {
     display: flex;
     justify-content: flex-start;
-    margin: 0; }
+    margin: 0;
+    width: 218px;
+    height: 228px; }
