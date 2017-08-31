@@ -2,8 +2,8 @@
 .content-bleed {
 
 	&.su-row {
-		margin-left: -16px;
-		margin-right: -16px;
+		margin-left: -(2*$gutter);
+		margin-right: -(2*$gutter);
 
 		.su-column {
 			margin-left: 0;
