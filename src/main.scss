@@ -5,6 +5,7 @@
 @import 'shared/icons';
 // @import 'shared/images';
 // @import 'shared/forms';
+@import 'shared/content';
 
 // header
 .site-header {
@@ -99,8 +100,30 @@
 
 //*** about k5 ***//
 // hero
-.post-106 {
+// .post-106,
+.post-110,
+.post-112,
+.post-114 {
+	margin: 0;
+	padding: 0;
+	.su-row {
+		display: flex;
+		align-items: strech;
+		// .su-column-size-1-2 {
+		// 	padding: 80px 32px;
+		// }
+	}
+}
 
+.post-106 {
+	.entry-content {
+		h1 {
+			width: 50%;
+		}
+		p {
+			width: 43%;
+		}
+	}
 }
 
 // about bay area
@@ -115,10 +138,6 @@
 
 // meet the team
 .post-114 {
-	.hentry {
-		margin: 0;
-		padding: 0;
-	}
 	h2 {
 		display: flex;
 		justify-content: center;

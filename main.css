@@ -267,6 +267,12 @@ label {
   content: "\e905";
   color: #000; }
 
+.su-column-size-1-2 {
+  padding: 80px 32px; }
+
+.su-column {
+  margin-left: 0; }
+
 .site-header .contact-header-wrapper {
   width: 100%;
   background-color: #285973;
@@ -302,9 +308,22 @@ label {
   display: flex;
   justify-content: flex-end; }
 
-.post-114 .hentry {
+.post-110,
+.post-112,
+.post-114 {
   margin: 0;
   padding: 0; }
+  .post-110 .su-row,
+  .post-112 .su-row,
+  .post-114 .su-row {
+    display: flex;
+    align-items: strech; }
+
+.post-106 .entry-content h1 {
+  width: 50%; }
+
+.post-106 .entry-content p {
+  width: 43%; }
 
 .post-114 h2 {
   display: flex;
