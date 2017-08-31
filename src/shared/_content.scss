@@ -20,11 +20,11 @@
 			width: 50%;
 			justify-content: center;
 			align-items: center;
+			display: flex;
 		}
 
-		@include breakpoint(sm) {
+		@media (min-width: 768px) {
 			margin-bottom: 0;
-			display: flex;
 		}
 	}
 }
