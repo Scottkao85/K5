@@ -51,6 +51,7 @@ Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-heade
 	.entry-hero-wrapper, .hentry-wrapper, .site-content-wrapper .has-post-thumbnail .entry-header-wrapper, .site-footer-wrapper, .site-header-wrapper, .widget-area-wrapper {
 	     width: auto;
 	     margin: 0 auto;
+	     padding: 0 16px;
 	}
 }
 
