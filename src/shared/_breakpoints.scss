@@ -6,7 +6,7 @@ $view-class: "xs", "sm", "md", "lg", "xl";
 
 @mixin breakpoint($class) {
 	@if $class == xs {
-		@media (max-width: $view-small - 1) { @content; }
+		@content;
 	}
 
 	@if $class == sm {
