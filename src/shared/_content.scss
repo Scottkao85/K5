@@ -1,5 +1,30 @@
 // styles for shared content boxes
+.content-bleed {
 
-.su-column-size-1-2 {
-	padding: 80px 32px;
+	&.su-row {
+		margin-left: -(2*$gutter);
+		margin-right: -(2*$gutter);
+
+		.su-column {
+			margin-left: 0;
+			margin-right: 0;
+
+			&:first-child, &:last-child {
+				margin-left: 0;
+				margin-right: 0;
+				margin-bottom: 0 !important;
+			}
+		}
+
+		.su-column-size-1-2 {
+			width: 50%;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+		}
+
+		@media (min-width: 768px) {
+			margin-bottom: 0;
+		}
+	}
 }
