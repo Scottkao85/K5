@@ -1,0 +1,27 @@
+$view-small: 600px;
+$view-medium: 896px;
+$view-large: 1020px;
+$view-xlarge: 1200px;
+$view-class: "xs", "sm", "md", "lg", "xl";
+
+@mixin breakpoint($class) {
+	@if $class == xs {
+		@media (max-width: $view-small - 1) { @content; }
+	}
+
+	@if $class == sm {
+		@media (min-width: $view-small) { @content; }
+	}
+
+	@if $class == md {
+		@media (min-width: $view-medium) { @content; }
+	}
+
+	@else if $class == lg {
+		@media (min-width: $view-large) { @content; }
+	}
+
+	@else if $class == xl {
+		@media (min-width: $view-xlarge) { @content; }
+	}
+}
