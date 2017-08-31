@@ -302,6 +302,10 @@ label {
   display: flex;
   justify-content: flex-end; }
 
+.post-114 .hentry {
+  margin: 0;
+  padding: 0; }
+
 .post-114 h2 {
   display: flex;
   justify-content: center;
@@ -311,9 +315,6 @@ label {
   display: flex;
   flex-direction: column-reverse;
   margin-bottom: 0; }
-  .testimonial-entry
-.post-114 .testimonial-entry.testimonial-entry-column-2 .post-114 .testimonial-entry.testimonial-entry-mobile-first-item-row .post-114 .testimonial-entry.testimonial-entry-first-item-row .post-114 .testimonial-entry.has-testimonial-thumbnail {
-    margin-bottom: 0; }
   .post-114 .testimonial-entry .testimonial-entry-content {
     margin-bottom: 0; }
   .post-114 .testimonial-entry .testimonial-entry-title {
