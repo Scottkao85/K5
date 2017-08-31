@@ -27,8 +27,8 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="contact-header-wrapper">
 			<div class="header-contact">
-				<a href="#" class="contact-email">something@email.com</a>
-				<p class="contact-phone"><span> | </span>555.555.5555</p>
+				<a href="mailto:k5family@live.net" class="contact-email">k5family@live.net</a>
+				<p class="contact-phone"><span> | </span>925.524.2602</p>
 				<div class="button-wrapper">
 					<button class="button button-primary button-condensed">Get a free quote</button>
 				</div>
