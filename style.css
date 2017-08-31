@@ -12,6 +12,48 @@ Text Domain: shoreditch
 Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, full-width-template, rtl-language-support, sticky-post, theme-options, translation-ready, blog, education
 */
 
+.hentry + .hentry {
+    margin-top: 0;
+}
+
+.entry-hero-wrapper, .hentry-wrapper, .site-content-wrapper, .site-footer-wrapper, .site-header-wrapper, .site-content-wrapper .has-post-thumbnail .entry-header-wrapper, .widget-area-wrapper {
+	margin: 0 16px;
+	max-width: none;
+	width: auto;
+}
+
+@media screen and (min-width: 1020px) {
+
+	.hentry {
+	    padding-bottom: 0;
+	    padding-top: 0;
+	}
+}
+
+@media screen and (min-width: 896px) {
+
+	.hentry {
+	    padding-bottom: 0;
+	    padding-top: 0;
+	}
+}
+
+@media screen and (min-width: 600px) {
+
+	.hentry {
+	    padding-top: 0;
+	    padding-bottom: 0;
+	    border-bottom: none;
+	    margin: 0;
+	    padding-top: 0;
+	}
+
+	.entry-hero-wrapper, .hentry-wrapper, .site-content-wrapper .has-post-thumbnail .entry-header-wrapper, .site-footer-wrapper, .site-header-wrapper, .widget-area-wrapper {
+	     width: auto;
+	     margin: 0 auto;
+	}
+}
+
 @media screen and (min-width: 1200px) {
 
 	/* Layout */
