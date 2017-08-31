@@ -36,6 +36,33 @@
       width: 100%;
     }
   }
+
+  .wpcf7 {
+    position: relative;
+    max-width: 795px;
+    margin: 0 auto;
+  }
+
+  .wpcf7-response-output {
+    top: 0;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+  }
+}
+
+.sent {
+  .wpcf7-response-output {
+    display: flex;
+  }
+
+  .home-form {
+    visibility: hidden;
+  }
 }
 
 // proven
