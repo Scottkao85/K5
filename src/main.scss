@@ -7,207 +7,48 @@
 @import 'shared/grid';
 @import 'shared/content';
 
-// header
-.site-header {
-	background: none;
-	border-bottom: none;
-	padding-bottom: 0;
+@import 'templates/header';
+// @import 'templates/footer';
 
-	.contact-header-wrapper {
-		width: 100%;
-		background-color: palette(secondary);
-		position: relative;
+@import 'page/home';
+@import 'page/about';
+@import 'page/process';
 
-		.header-contact {
-			display: flex;
-			justify-content: flex-end;
-			align-items: center;
-			width: 90%;
-			height: 72px;
-			background-color: palette(secondary);
-			.button-wrapper {
-				display: inline-block;
-			}
-			.contact-email,
-			.contact-phone {
-				color: $white;
-				margin: 0 8px;
-				font-size: 14px;
-			}
-			.button {
-				color: $white;
-				// margin: 0;
-				font-size: 16px;
-			}
-		}
-	}
-	.menu-header-wrapper {
-		.site-branding {
-			margin-top: 4px;
-		}
-		.site-menu {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 100%;
-			height: 72px;
-			.main-navigation {
-				margin-top: 0;
-			}
-			.primary-menu {
-				// justify-content: center;
-				a {
-					color: white;
-					border-bottom: none;
-					padding: 15px 0;
-				}
-			}
-		}
-		.header-contact {
-			display: flex;
-			justify-content: flex-end;
-		}
-	}
+/*
+*******************
+*******************
+
+Changes to the Shortcodes Ultimate [su-**]
+need to be kept in the plugin Custom
+CSS Panel in the dashboard. Maintained
+in comments:
+
+*******************
+
+.su-row .su-column {
+    margin: 0 0 0 1%;
 }
 
-//*** home page ***//
-// hero
-.post-49 {
-	padding-top: 230px;
+.su-column-size-1-4 {
+    width: 24%;
 }
 
-.home-hero {
-	text-align: center;
-
-	.eyebrow {
-		max-width: 580px;
-		margin: 0 auto;
-	}
-
-	.home-contact {
-
-		padding-top: 40px;
-
-		@include breakpoint(md) {
-			padding-top: 184px;
-		}
-	}
-
-	.home-form {
-		max-width: 795px;
-		margin: 0 auto;
-		text-align: left;
-
-		label {
-			width: 100%;
-		}
-
-		.wpcf7-submit {
-			@extend .button-tertiary-2;
-			margin-top: 14px;
-			width: 100%;
-		}
-	}
+.su-row {
+	margin-bottom: 0;
 }
 
-// proven
-.post-51 {
+*******************
+*******************
+*/
 
-}
+/*
+*******************
+*******************
 
-// handle hard part
-.post-71 {
+Changes to the styles.css need
+to be kept in the child theme's
+style.css file.
 
-}
-
-// peace of mind
-.post-80 {
-
-}
-
-// k5 Believe
-.post-86 {
-
-}
-
-//*** How We Buy Homes ***//
-// hero
-.post-131 {
-
-}
-
-// when you're ready
-.post-139 {
-
-}
-
-// ways we've helped
-.post-150 {
-
-}
-
-//*** about k5 ***//
-// hero
-// .post-106,
-.post-110,
-.post-112,
-.post-114 {
-	margin: 0;
-	padding: 0;
-	.su-row {
-		display: flex;
-		align-items: strech;
-		// .su-column-size-1-2 {
-		// 	padding: 80px 32px;
-		// }
-	}
-}
-
-.post-106 {
-	.entry-content {
-		h1 {
-			width: 50%;
-		}
-		p {
-			width: 43%;
-		}
-	}
-}
-
-// about bay area
-.post-110 {
-
-}
-
-// our mission
-.post-112 {
-
-}
-
-// meet the team
-.post-114 {
-	h2 {
-		display: flex;
-		justify-content: center;
-		padding-top: 50px;
-	}
-	.testimonial-entry {
-		display: flex;
-		flex-direction: column-reverse;
-		margin-bottom: 0;
-		.testimonial-entry-content {
-			margin-bottom: 0;
-		}
-		.testimonial-entry-title {
-			display: flex;
-			justify-content: flex-end;
-		}
-		.testimonial-featured-image {
-			display: flex;
-			justify-content: flex-start;
-			margin: 0;
-			width: 218px;
-			height: 228px;
-		}
-	}
-}
+*******************
+*******************
+*/
