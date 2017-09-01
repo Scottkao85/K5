@@ -23,6 +23,12 @@ Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-heade
 	width: auto;
 }
 
+.hentry {
+    border-bottom: none;
+    margin: 0;
+    padding-top: 0;
+}
+
 @media screen and (min-width: 1020px) {
 
 	.hentry {
