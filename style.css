@@ -24,16 +24,22 @@ Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-heade
 }
 
 .featured-content .hentry.has-post-thumbnail .button, .page-template-panel-page .hentry.has-post-thumbnail .button {
-
-}
-
-.featured-content .hentry.has-post-thumbnail .button, .page-template-panel-page .hentry.has-post-thumbnail .button {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 40px;
+    box-shadow: 0 1px 3px 2px rgba(3, 3, 3, .3);
+    transition: background-color .25s, box-shadow .25s;
+    line-height: 1;
     background-color: #FFD8A6;
     color: #030303; }
 .featured-content .hentry.has-post-thumbnail .button, .page-template-panel-page .hentry.has-post-thumbnail .button:hover {
-  background-color: #b39875; }
+  background-color: #b39875;
+  color: #030303;
+  box-shadow: none; }
 .featured-content .hentry.has-post-thumbnail .button, .page-template-panel-page .hentry.has-post-thumbnail .button:focus {
-  background-color: #fde0bc; }
+  background-color: #fde0bc;
+  color: #030303;
+  box-shadow: none; }
 
 @media screen and (min-width: 1020px) {
 
