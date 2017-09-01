@@ -71,8 +71,59 @@
 }
 
 // handle hard part
-.post-71 {
+.post-70 {
+  .content-bleed {
+    position: relative;
+    overflow: hidden;
 
+    .uris-slider-title {
+      display: none;
+    }
+
+    @media (min-width: 769px) {
+      .home-gallery {
+        position: absolute;
+        left: 50%;
+        height: 100%;
+
+        .slider-pro {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+        }
+
+        .sp-slides-container {
+            position: absolute;
+            height: 100%;
+        }
+
+        .sp-slides, .sp-slide {
+          position: absolute;
+          height: 100% !important;
+        }
+
+        .sp-mask {
+          position: absolute;
+          height: 100% !important;
+          transition: none !important;
+        }
+
+        .sp-selected {
+          z-index: 1;
+        }
+
+        .sp-slide, .sp-image-container, .sp-image {
+          height: 100% !important;
+        }
+
+        .sp-image {
+          width: auto !important;
+        }
+      }
+    }
+
+  }
 }
 
 // peace of mind
