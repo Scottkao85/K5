@@ -8,14 +8,21 @@
 		width: 100%;
 		background-color: palette(secondary);
 		position: relative;
+		border-bottom: $gutter/2 solid $white;
+		@include breakpoint(xs) {
+			display: none;
+		}
+		@include breakpoint(md) {
+			display: block
+		}
 
 		.header-contact {
 			display: flex;
 			justify-content: flex-end;
 			align-items: center;
-			width: 90%;
 			height: 72px;
 			background-color: palette(secondary);
+			padding-right: $gutter*2;
 			.button-wrapper {
 				display: inline-block;
 			}
@@ -24,26 +31,61 @@
 				color: $white;
 				margin: 0 8px;
 				font-size: 14px;
+				padding-right: $gutter;
+
 			}
 			.button {
 				color: $white;
-				// margin: 0;
 				font-size: 16px;
+				@include breakpoint(xs) {
+					display: none;
+				}
+				@include breakpoint(md) {
+					display: block;
+				}
 			}
 		}
 	}
 	.menu-header-wrapper {
+		position: relative;
 		.site-branding {
-			margin-top: 4px;
+			position: absolute;
+			@include breakpoint(md) {
+				bottom: $gutter*3;
+				left: $gutter*2;
+			}
+			@include breakpoint(xs) {
+				bottom: $gutter;
+			}
+			.custom-logo {
+				@include breakpoint(md) {
+					width: 90px;
+					border: 4px solid $white;
+					border-radius: 50%;
+				}
+				@include breakpoint(xs) {
+					width: 60px;
+					border: 2px solid $white;
+					border-radius: 50%;
+					margin-left: $gutter;
+
+				}
+			}
 		}
 		.site-menu {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 100%;
-			height: 72px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				height: 72px;
 			.main-navigation {
 				margin-top: 0;
+				@include breakpoint(xs) {
+					display: none;
+				}
+				@include breakpoint(md) {
+					display: block;
+				}
 			}
 			.primary-menu {
 				// justify-content: center;
@@ -57,6 +99,17 @@
 		.header-contact {
 			display: flex;
 			justify-content: flex-end;
+		}
+		.menu-toggle {
+			@include breakpoint(xs) {
+				position: absolute;
+				right: $gutter;
+				bottom: $gutter*2;
+			}
+			@include breakpoint(lg) {
+				display: none;
+			}
+
 		}
 	}
 }
