@@ -23,6 +23,18 @@ Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-heade
 	width: auto;
 }
 
+.featured-content .hentry.has-post-thumbnail .button, .page-template-panel-page .hentry.has-post-thumbnail .button {
+
+}
+
+.featured-content .hentry.has-post-thumbnail .button, .page-template-panel-page .hentry.has-post-thumbnail .button {
+    background-color: #FFD8A6;
+    color: #030303; }
+.featured-content .hentry.has-post-thumbnail .button, .page-template-panel-page .hentry.has-post-thumbnail .button:hover {
+  background-color: #b39875; }
+.featured-content .hentry.has-post-thumbnail .button, .page-template-panel-page .hentry.has-post-thumbnail .button:focus {
+  background-color: #fde0bc; }
+
 @media screen and (min-width: 1020px) {
 
 	.hentry {
