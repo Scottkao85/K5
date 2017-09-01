@@ -254,6 +254,58 @@
 // peace of mind
 .post-80 {
 
+  &.hentry.has-post-thumbnail{
+    color: $white;
+  }
+
+  .home-steps {
+    padding: 0 $gutter*4;
+  }
+
+  .grid-gutter:last-child .step .icon:after {
+    display: none;
+  }
+
+  .step {
+
+    .icon {
+      text-align: center;
+      position: relative;
+
+      @include breakpoint(lg) {
+        &:after {
+          font-family: 'icomoon';
+          content: "\e905";
+          color: #fff;
+          font-size: 80px;
+          position: absolute;
+          top: 22px;
+        }
+
+        &:last-child:after {
+          display: none;
+        }
+      }
+    }
+
+    [class^="icon-"], [class*=" icon-"] {
+      font-size: 80px;
+      text-align: center;
+
+      &:before {
+        color: #fff;
+      }
+    }
+  }
+
+  .home-process-cta {
+    text-align: center;
+
+    .su-column {
+      padding-top: $gutter*4;
+      padding-bottom: $gutter*12;
+    }
+  }
 }
 
 // k5 Believe
