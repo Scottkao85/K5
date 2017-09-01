@@ -28,7 +28,7 @@
 		<div class="contact-header-wrapper">
 			<div class="header-contact">
 				<a href="mailto:k5family@live.net" class="contact-email">k5family@live.net</a>
-				<p class="contact-phone"><span> | </span>925.524.2602</p>
+				<p class="contact-phone"><span>| </span> 925.524.2602</p>
 				<div class="button-wrapper">
 					<button class="button button-primary button-condensed">Get a free quote</button>
 				</div>
