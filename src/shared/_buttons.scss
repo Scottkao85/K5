@@ -1,7 +1,7 @@
 // buttons for k5
 
 @function set-text-color($color) {
-  @if (lightness($color) > 50) {
+  @if (lightness($color) >= 60) {
     @return $black; // Lighter backgorund, return dark color
   } @else {
     @return $white; // Darker background, return light color
