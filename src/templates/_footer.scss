@@ -1,1 +1,25 @@
 // footer
+
+// CTA
+.widget-footer-top-area {
+	padding: $gutter*8 0 $gutter*12;
+	background: url('images/footer.jpg') center no-repeat;
+	background-size: cover;
+	text-align: center;
+	font-weight: bold;
+	color: palette(secondary);
+
+	.widget-title {
+		font-weight: bold;
+	}
+
+	.widget {
+		padding: 0;
+	}
+}
+
+// Contact and Copyright
+
+.widget-footer-bottom-area {
+
+}
