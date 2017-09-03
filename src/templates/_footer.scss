@@ -1,0 +1,78 @@
+// footer
+
+// CTA
+.widget-footer-top-area {
+	padding: $gutter*8 0 $gutter*12;
+	background: url('images/footer.jpg') center no-repeat;
+	background-size: cover;
+	text-align: center;
+	font-weight: bold;
+	color: palette(secondary);
+
+	.widget-title {
+		font-weight: bold;
+	}
+
+	.widget {
+		padding: 0;
+	}
+}
+
+// Contact and Copyright
+
+.widget-footer-bottom-area {
+	background: palette(secondary);
+	padding: $gutter*4 0;
+	color: $white;
+
+	.widget_text {
+		padding: 0;
+	}
+
+	.contact-header {
+		text-transform: uppercase;
+		margin: 0;
+		font-size: 12px;
+	}
+
+	.mobile-link {
+		a {
+			color: $white;
+		}
+	}
+
+	.copyright {
+		li {
+			display: inline-block;
+			margin-right: $gutter;
+		}
+
+		@include breakpoint(md) {
+			text-align: right;
+
+			li {
+				margin: 0;
+				display: block;
+			}
+		}
+	}
+
+	a {
+		color: $white;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.footer-list {
+		padding: 0;
+		margin: 0;
+
+		li {
+			list-style-type: none;
+			font-size: 12px;
+			line-height: 18px;
+		}
+	}
+}
