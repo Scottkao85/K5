@@ -1,0 +1,128 @@
+$col: 12;
+$gutter: 8px;
+$gutter-compensate-increase: $gutter*2;
+
+// Basic flex property settings
+%flex {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+// Global propertoes for all grid columns
+%grid-global {
+  @extend %flex;
+  padding: 0;
+  margin: 0 0 $gutter 0;
+
+  @include breakpoint("md") {
+    margin: 0 0 $gutter-compensate-increase;
+  }
+}
+
+.grid-gutter {
+  padding: 0 $gutter;
+}
+
+// Main Content container, top-level grid
+.grid-container {
+  @extend %flex;
+}
+
+// Mixin to create grid columns
+@mixin grid-columns($class, $c: true) {
+
+  @for $i from 1 through $col {
+
+    $width: percentage($i/$col);
+    $grid-class-name: 'grid-#{$class}_col#{$i}';
+
+    .#{$grid-class-name} {
+
+      // If we are pushing content
+      @if $c {
+
+        @content;
+
+      // Needed once to build the column width
+      } @else {
+
+        max-width: $width;
+        width: $width;
+        flex-basis: $width;
+      }
+    }
+
+  }
+}
+
+// Offset classes
+@mixin grid-offset($class) {
+  @for $i from 0 through ($col)-1 {
+
+    $margin: percentage(1-((($col)-($i))/$col));
+    $grid-offset-class-name: 'grid-#{$class}_offset_#{$i}';
+
+    .#{$grid-offset-class-name} {
+
+      margin-left: $margin;
+    }
+  }
+}
+
+// Builds grids and widths
+@each $class in $view-class {
+
+  @include grid-columns($class) {
+    // Extends global list of properties to all grid columns
+    @extend %grid-global;
+  }
+
+  @include breakpoint(#{$class}) {
+
+    @include grid-columns($class, $c: null);
+    @include grid-offset($class);
+
+    // Flex direction
+    .grid-#{$class}_row         { flex-direction: row; }
+    .grid-#{$class}_column      { flex-direction: column; }
+    .grid-#{$class}_rowreverse    { flex-direction: row-reverse; }
+    .grid-#{$class}_columnreverse   { flex-direction: column-reverse; }
+
+    // Justify Content
+    .grid-#{$class}_justifycenter   { justify-content: center; }
+    .grid-#{$class}_justifystart    { justify-content: flex-start; }
+    .grid-#{$class}_justifyend    { justify-content: flex-end; }
+    .grid-#{$class}_justifyright    { justify-content: right; }
+    .grid-#{$class}_justifyleft     { justify-content: left; }
+    .grid-#{$class}_justifybaseline   { justify-content: baseline; }
+    .grid-#{$class}_justifybetween  { justify-content: space-between; }
+    .grid-#{$class}_justifyaround   { justify-content: space-around; }
+    .grid-#{$class}_justifyeven     { justify-content: space-evenly; }
+    .grid-#{$class}_justifystretch  { justify-content: stretch; }
+
+    // Align Items
+    .grid-#{$class}_alignitemscenter  { align-items: center; }
+    .grid-#{$class}_alignitemsstart { align-items: flex-start; }
+    .grid-#{$class}_alignitemsend   { align-items: flex-end; }
+    .grid-#{$class}_alignitemsright { align-items: right; }
+    .grid-#{$class}_alignitemsleft  { align-items: left; }
+    .grid-#{$class}_alignitemsbaseline{ align-items: baseline; }
+
+    // Align Self
+    .grid-#{$class}_alignselfcenter { align-items: center; }
+    .grid-#{$class}_alignselfstart  { align-items: flex-start; }
+    .grid-#{$class}_alignselfend    { align-items: flex-end; }
+    .grid-#{$class}_alignselfright  { align-items: right; }
+    .grid-#{$class}_alignselfleft   { align-items: left; }
+    .grid-#{$class}_alignselfbaseline { align-items: baseline; }
+
+    // Flex Wrap
+    .grid-#{$class}_nowrap      { flex-wrap: nowrap; }
+    .grid-#{$class}_wrap        { flex-wrap: wrap; }
+    .grid-#{$class}_wrapreverse     { flex-wrap: wrap-reverse; }
+  }
+}
+
+// Nested Grid
+.grid-nester { margin-bottom: 0; }

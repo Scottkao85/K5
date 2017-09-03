@@ -4,7 +4,7 @@
 
 https://codex.wordpress.org/Installing_WordPress_Locally_on_Your_Mac_With_MAMP
 
-## These are the specific MAMP settings you should be using:
+### These are the specific MAMP settings you should be using:
 * Wordpress location: /Applications/MAMP/htdocs/wordpress
 * PHP settings: 7.0.15
 * Database: wordpress_local
@@ -29,4 +29,9 @@ https://codex.wordpress.org/Installing_WordPress_Locally_on_Your_Mac_With_MAMP
 	* Our settings are in Google Drive
 
 ## SASS
-* Let's get this set up then doc anything we need to in the README.
+* Run gulp to process SASS files
+
+## BRANCHES
+* Branches to be named after issues.
+* Check-ins should happen at the start of each work session to determine who will be on what branch and which files will be affected.
+* Create a merge request for all pushes to the repo. Assign them to the opposite person.

@@ -3,140 +3,56 @@
 @import 'shared/fonts';
 @import 'shared/buttons';
 @import 'shared/icons';
-// @import 'shared/images';
-// @import 'shared/forms';
+@import 'shared/breakpoints';
+@import 'shared/grid';
+@import 'shared/content';
 
-// header
-.site-header {
+@import 'templates/header';
+// @import 'templates/footer';
 
-	.contact-header-wrapper {
-		width: 100%;
-		background-color: palette(secondary);
-		position: relative;
+@import 'page/home';
+@import 'page/about';
+@import 'page/process';
 
-		.header-contact {
-			display: flex;
-			justify-content: flex-end;
-			width: 90%;
-			background-color: palette(secondary);
-			.button-wrapper {
-				display: inline-block;
-			}
-			.contact-email,
-			.contact-phone,
-			.button-wrapper {
-				color: $white;
-				margin: 1em 0.5em;
-			}
-		}
-	}
-	.menu-header-wrapper {
-		.site-branding {
-			margin-top: 4px;
-		}
-		.site-menu {
-			width: 100%;
-			.main-navigation {
-				margin-top: 0;
-			}
-			.primary-menu {
-				justify-content: center;
-				a {
-					color: white;
-					border-bottom: none;
-					padding: 15px 0;
-				}
-			}
-		}
-		.header-contact {
-			display: flex;
-			justify-content: flex-end;
-		}
-	}
+/*
+*******************
+*******************
+
+Changes to the Shortcodes Ultimate [su-**]
+need to be kept in the plugin Custom
+CSS Panel in the dashboard. Maintained
+in comments:
+
+*******************
+
+.su-row .su-column {
+    margin: 0 0 0 1%;
 }
 
-//*** home page ***//
-// hero
-.post-49 {
-
+.su-column-size-1-4 {
+    width: 24%;
 }
 
-// proven
-.post-51 {
-
+.su-column-size-1-2 {
+	padding: 80px 32px;
 }
 
-// handle hard part
-.post-71 {
-
+.su-row {
+	margin-bottom: 0;
 }
 
-// with K5
-.post-80 {
+*******************
+*******************
+*/
 
-}
+/*
+*******************
+*******************
 
-// k5 Believe
-.post-86 {
+Changes to the styles.css need
+to be kept in the child theme's
+style.css file.
 
-}
-
-//*** How We Buy Homes ***//
-// hero
-.post-131 {
-
-}
-
-// when you're ready
-.post-139 {
-
-}
-
-// ways we've helped
-.post-150 {
-
-}
-
-//*** about k5 ***//
-// hero
-.post-106 {
-
-}
-
-// about bay area
-.post-110 {
-
-}
-
-// our mission
-.post-112 {
-
-}
-
-// meet the team
-.post-114 {
-	h2 {
-		display: flex;
-		justify-content: center;
-		padding-top: 50px;
-	}
-	.testimonial-entry {
-		display: flex;
-		flex-direction: column-reverse;
-		margin-bottom: 0;
-		.testimonial-entry-content {
-			margin-bottom: 0;
-		}
-		.testimonial-entry-title {
-			display: flex;
-			justify-content: flex-end;
-		}
-		.testimonial-featured-image {
-			display: flex;
-			justify-content: flex-start;
-			margin: 0;
-			width: 218px;
-			height: 228px;
-		}
-	}
-}
+*******************
+*******************
+*/
