@@ -6,7 +6,45 @@
 
 // when you're ready
 .post-139 {
+	.process-row {
 
+		.process-icon {
+			order: 1;
+			text-align: center;
+		}
+
+		.process-content {
+			a {
+				color: $white;
+				box-shadow: none;
+			}
+		}
+
+		&:nth-child(odd) {
+			.process-content {
+				order: 1;
+			}
+		}
+
+		@media (min-width: 769px) {
+			display: flex;
+			align-items: center;
+
+			.process-icon, .process-content {
+				display: flex;
+				justify-content: center;
+			}
+		}
+
+		[class^="icon-"]:before, [class*=" icon-"]:before {
+			color: palette(primary);
+			font-size: 80px;
+
+			@include breakpoint(md) {
+				font-size: 160px;
+			}
+		}
+	}
 }
 
 // ways we've helped
