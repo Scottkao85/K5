@@ -15,7 +15,7 @@ $gutter-compensate-increase: $gutter*2;
   padding: 0;
   margin: 0 0 $gutter 0;
 
-  @include breakpoint("md") {
+  @include breakpoint('md') {
     margin: 0 0 $gutter-compensate-increase;
   }
 }
@@ -41,12 +41,10 @@ $gutter-compensate-increase: $gutter*2;
 
       // If we are pushing content
       @if $c {
-
         @content;
 
       // Needed once to build the column width
       } @else {
-
         max-width: $width;
         width: $width;
         flex-basis: $width;
@@ -64,7 +62,6 @@ $gutter-compensate-increase: $gutter*2;
     $grid-offset-class-name: 'grid-#{$class}_offset_#{$i}';
 
     .#{$grid-offset-class-name} {
-
       margin-left: $margin;
     }
   }

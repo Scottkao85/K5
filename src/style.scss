@@ -1,9 +1,10 @@
 // main styles for k5
-@import 'overrides/style';
-
 @import 'shared/colors';
 @import 'shared/fonts';
 @import 'shared/breakpoints';
+
+@import 'overrides/style';
+
 @import 'shared/grid';
 @import 'shared/buttons';
 @import 'shared/inputs';

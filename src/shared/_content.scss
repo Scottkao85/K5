@@ -19,7 +19,6 @@
 }
 
 .site-content {
-
     .content-area {
     	margin-top: -72px;
     }
@@ -34,7 +33,7 @@
 }
 
 .content-bleed {
-	@media (min-width: 769px) {
+	@include breakpoint(df) {
 		display: flex;
 	}
 
@@ -60,7 +59,7 @@
 			display: flex;
 		}
 
-		@media (min-width: 768px) {
+		@include breakpoint(df) {
 			margin-bottom: 0;
 		}
 	}

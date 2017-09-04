@@ -10,6 +10,9 @@ $colors: (
 $black: #030303;
 $white: #F8F4F0;
 
+$bright-white: #fff;
+$alert: #f00;
+
 @function palette($key) {
 	@return map-get($colors, $key);
 }

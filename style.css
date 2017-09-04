@@ -1,87 +1,4 @@
 @charset "UTF-8";
-/*
-Theme Name: K5
-Theme URI: https://wordpress.com/themes/shoreditch/
-Template: shoreditch
-Description: Shoreditch is a functional and responsive theme perfect for your business’s online presence. Although its main purpose is business, Shoreditch looks great as a personal blog theme too.
-Version: 1.1.1
-Author: Automattic
-Author URI: https://wordpress.com/themes/
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: shoreditch
-Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, full-width-template, rtl-language-support, sticky-post, theme-options, translation-ready, blog, education
-*/
-.entry-header .entry-title {
-  display: none; }
-
-.hentry + .hentry,
-.page-template-panel-page .hentry + .has-post-thumbnail {
-  margin-top: 0; }
-
-.hentry {
-  border-bottom: none;
-  margin: 0;
-  padding-top: 0; }
-
-.entry-hero-wrapper, .hentry-wrapper, .site-content-wrapper, .site-footer-wrapper, .site-header-wrapper, .site-content-wrapper .has-post-thumbnail .entry-header-wrapper, .widget-area-wrapper {
-  margin: 0 16px;
-  max-width: none;
-  width: auto; }
-
-.featured-content .hentry.has-post-thumbnail .button, .page-template-panel-page .hentry.has-post-thumbnail .button {
-  font-weight: bold;
-  font-size: 18px;
-  padding: 15px 40px;
-  box-shadow: 0 1px 3px 2px rgba(3, 3, 3, 0.3);
-  transition: background-color .25s, box-shadow .25s;
-  line-height: 1;
-  background-color: #FFD8A6;
-  color: #030303; }
-
-.featured-content .hentry.has-post-thumbnail .button, .page-template-panel-page .hentry.has-post-thumbnail .button:hover {
-  background-color: #b39875;
-  color: #030303;
-  box-shadow: none; }
-
-.featured-content .hentry.has-post-thumbnail .button, .page-template-panel-page .hentry.has-post-thumbnail .button:focus {
-  background-color: #fde0bc;
-  color: #030303;
-  box-shadow: none; }
-
-@media screen and (min-width: 1020px) {
-  .hentry {
-    padding-bottom: 0;
-    padding-top: 0; } }
-
-@media screen and (min-width: 896px) {
-  .hentry {
-    padding-bottom: 0;
-    padding-top: 0; } }
-
-@media screen and (min-width: 600px) {
-  .hentry {
-    padding-top: 0;
-    padding-bottom: 0;
-    border-bottom: none;
-    margin: 0;
-    padding-top: 0; }
-  .entry-hero-wrapper, .hentry-wrapper, .site-content-wrapper .has-post-thumbnail .entry-header-wrapper, .site-footer-wrapper, .site-header-wrapper, .widget-area-wrapper {
-    width: auto;
-    margin: 0 auto;
-    padding: 0 16px; } }
-
-@media screen and (min-width: 1200px) {
-  /* Layout */
-  .entry-hero-wrapper,
-  .hentry-wrapper,
-  .site-content-wrapper .has-post-thumbnail .entry-header-wrapper,
-  .site-footer-wrapper,
-  .site-header-wrapper,
-  .widget-area-wrapper {
-    width: 1170px;
-    max-width: none; } }
-
 .color-primary {
   background-color: #BF9969; }
   .color-primary.extra-light {
@@ -177,15 +94,6 @@ Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-heade
   .color-tertiary-3.dark-trans {
     background-color: rgba(32, 49, 57, 0.5); }
 
-/*
-Style.css overrides
-*/
-.page-template-panel-page .hentry.has-post-thumbnail {
-  text-shadow: none; }
-
-/*
-Custom
-*/
 .font-primary {
   color: set-text-color(#BF9969); }
 
@@ -259,16 +167,141 @@ label {
 .gradient h2, .gradient h3, .gradient h4, .gradient h5, .gradient h6, .gradient p, .gradient li {
   color: #F8F4F0; }
 
-.grid-xs_col1, .grid-xs_col2, .grid-xs_col3, .grid-xs_col4, .grid-xs_col5, .grid-xs_col6, .grid-xs_col7, .grid-xs_col8, .grid-xs_col9, .grid-xs_col10, .grid-xs_col11, .grid-xs_col12, .grid-sm_col1, .grid-sm_col2, .grid-sm_col3, .grid-sm_col4, .grid-sm_col5, .grid-sm_col6, .grid-sm_col7, .grid-sm_col8, .grid-sm_col9, .grid-sm_col10, .grid-sm_col11, .grid-sm_col12, .grid-md_col1, .grid-md_col2, .grid-md_col3, .grid-md_col4, .grid-md_col5, .grid-md_col6, .grid-md_col7, .grid-md_col8, .grid-md_col9, .grid-md_col10, .grid-md_col11, .grid-md_col12, .grid-lg_col1, .grid-lg_col2, .grid-lg_col3, .grid-lg_col4, .grid-lg_col5, .grid-lg_col6, .grid-lg_col7, .grid-lg_col8, .grid-lg_col9, .grid-lg_col10, .grid-lg_col11, .grid-lg_col12, .grid-xl_col1, .grid-xl_col2, .grid-xl_col3, .grid-xl_col4, .grid-xl_col5, .grid-xl_col6, .grid-xl_col7, .grid-xl_col8, .grid-xl_col9, .grid-xl_col10, .grid-xl_col11, .grid-xl_col12, .grid-container {
+/*
+Theme Name: K5
+Theme URI: https://wordpress.com/themes/shoreditch/
+Template: shoreditch
+Description: Shoreditch is a functional and responsive theme perfect for your business’s online presence. Although its main purpose is business, Shoreditch looks great as a personal blog theme too.
+Version: 1.1.1
+Author: Automattic
+Author URI: https://wordpress.com/themes/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: shoreditch
+Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, full-width-template, rtl-language-support, sticky-post, theme-options, translation-ready, blog, education
+*/
+.hentry {
+  border-bottom: none;
+  margin: 0;
+  padding-top: 0; }
+  .hentry + .hentry {
+    margin-top: 0; }
+
+.page-template-panel-page .hentry.has-post-thumbnail {
+  text-shadow: none; }
+
+.page-template-panel-page .hentry + .has-post-thumbnail {
+  margin-top: 0; }
+
+.entry-header .entry-title {
+  display: none; }
+
+.entry-hero-wrapper, .hentry-wrapper, .site-content-wrapper, .site-footer-wrapper, .site-header-wrapper, .site-content-wrapper .has-post-thumbnail .entry-header-wrapper, .widget-area-wrapper {
+  margin: 0 16px;
+  max-width: none;
+  width: auto; }
+
+.featured-content .hentry.has-post-thumbnail .button.button-tertiary-2:hover, .featured-content .home-hero .home-form
+.page-template-panel-page .hentry.has-post-thumbnail .button.wpcf7-submit:hover, .featured-content .hentry.has-post-thumbnail .home-hero .home-form .button.wpcf7-submit:hover, .home-hero .home-form .featured-content .hentry.has-post-thumbnail .button.wpcf7-submit:hover, .featured-content .hentry.has-post-thumbnail .button.button-tertiary-2:active, .featured-content .home-hero .home-form
+.page-template-panel-page .hentry.has-post-thumbnail .button.wpcf7-submit:active, .featured-content .hentry.has-post-thumbnail .home-hero .home-form .button.wpcf7-submit:active, .home-hero .home-form .featured-content .hentry.has-post-thumbnail .button.wpcf7-submit:active, .featured-content .hentry.has-post-thumbnail .button.button-tertiary-2:focus, .featured-content .home-hero .home-form
+.page-template-panel-page .hentry.has-post-thumbnail .button.wpcf7-submit:focus, .featured-content .hentry.has-post-thumbnail .home-hero .home-form .button.wpcf7-submit:focus, .home-hero .home-form .featured-content .hentry.has-post-thumbnail .button.wpcf7-submit:focus,
+.page-template-panel-page .home-hero .home-form .featured-content .hentry.has-post-thumbnail .button.wpcf7-submit:hover, .page-template-panel-page .hentry.has-post-thumbnail .button.button-tertiary-2:hover,
+.page-template-panel-page .hentry.has-post-thumbnail .home-hero .home-form .button.wpcf7-submit:hover, .home-hero .home-form
+.page-template-panel-page .hentry.has-post-thumbnail .button.wpcf7-submit:hover,
+.page-template-panel-page .home-hero .home-form .featured-content .hentry.has-post-thumbnail .button.wpcf7-submit:active, .page-template-panel-page .hentry.has-post-thumbnail .button.button-tertiary-2:active,
+.page-template-panel-page .hentry.has-post-thumbnail .home-hero .home-form .button.wpcf7-submit:active, .home-hero .home-form
+.page-template-panel-page .hentry.has-post-thumbnail .button.wpcf7-submit:active,
+.page-template-panel-page .home-hero .home-form .featured-content .hentry.has-post-thumbnail .button.wpcf7-submit:focus, .page-template-panel-page .hentry.has-post-thumbnail .button.button-tertiary-2:focus,
+.page-template-panel-page .hentry.has-post-thumbnail .home-hero .home-form .button.wpcf7-submit:focus, .home-hero .home-form
+.page-template-panel-page .hentry.has-post-thumbnail .button.wpcf7-submit:focus {
+  color: #030303; }
+
+.featured-content .hentry.has-post-thumbnail .button,
+.page-template-panel-page .hentry.has-post-thumbnail .button,
+.comment-content a.button,
+.comment-reply-title small a.button,
+.entry-content a.button,
+.entry-summary a.button,
+.logged-in-as a.button,
+.pingback .comment-body > a.button,
+.site-info a.button,
+.site-info a.button,
+.taxonomy-description a {
+  box-shadow: 0 1px 3px 2px rgba(3, 3, 3, 0.3); }
+  .featured-content .hentry.has-post-thumbnail .button:hover, .featured-content .hentry.has-post-thumbnail .button:active, .featured-content .hentry.has-post-thumbnail .button:focus,
+  .page-template-panel-page .hentry.has-post-thumbnail .button:hover,
+  .page-template-panel-page .hentry.has-post-thumbnail .button:active,
+  .page-template-panel-page .hentry.has-post-thumbnail .button:focus,
+  .comment-content a.button:hover,
+  .comment-content a.button:active,
+  .comment-content a.button:focus,
+  .comment-reply-title small a.button:hover,
+  .comment-reply-title small a.button:active,
+  .comment-reply-title small a.button:focus,
+  .entry-content a.button:hover,
+  .entry-content a.button:active,
+  .entry-content a.button:focus,
+  .entry-summary a.button:hover,
+  .entry-summary a.button:active,
+  .entry-summary a.button:focus,
+  .logged-in-as a.button:hover,
+  .logged-in-as a.button:active,
+  .logged-in-as a.button:focus,
+  .pingback .comment-body > a.button:hover,
+  .pingback .comment-body > a.button:active,
+  .pingback .comment-body > a.button:focus,
+  .site-info a.button:hover,
+  .site-info a.button:active,
+  .site-info a.button:focus,
+  .site-info a.button:hover,
+  .site-info a.button:active,
+  .site-info a.button:focus,
+  .taxonomy-description a:hover,
+  .taxonomy-description a:active,
+  .taxonomy-description a:focus {
+    box-shadow: none; }
+
+@media (min-width: 600px) {
+  .hentry {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    margin: 0; }
+  .entry-hero-wrapper, .hentry-wrapper, .site-content-wrapper .has-post-thumbnail .entry-header-wrapper, .site-footer-wrapper, .site-header-wrapper, .widget-area-wrapper {
+    width: auto;
+    padding: 0 16px;
+    margin: 0 auto; } }
+
+@media (min-width: 896px) {
+  .hentry {
+    padding-bottom: 0;
+    padding-top: 0; } }
+
+@media (min-width: 1020px) {
+  .hentry {
+    padding-bottom: 0;
+    padding-top: 0; } }
+
+@media (min-width: 1200px) {
+  .entry-hero-wrapper,
+  .hentry-wrapper,
+  .site-content-wrapper .has-post-thumbnail .entry-header-wrapper,
+  .site-footer-wrapper,
+  .site-header-wrapper,
+  .widget-area-wrapper {
+    width: 1170px;
+    max-width: none; } }
+
+.grid-xs_col1, .grid-xs_col2, .grid-xs_col3, .grid-xs_col4, .grid-xs_col5, .grid-xs_col6, .grid-xs_col7, .grid-xs_col8, .grid-xs_col9, .grid-xs_col10, .grid-xs_col11, .grid-xs_col12, .grid-sm_col1, .grid-sm_col2, .grid-sm_col3, .grid-sm_col4, .grid-sm_col5, .grid-sm_col6, .grid-sm_col7, .grid-sm_col8, .grid-sm_col9, .grid-sm_col10, .grid-sm_col11, .grid-sm_col12, .grid-md_col1, .grid-md_col2, .grid-md_col3, .grid-md_col4, .grid-md_col5, .grid-md_col6, .grid-md_col7, .grid-md_col8, .grid-md_col9, .grid-md_col10, .grid-md_col11, .grid-md_col12, .grid-df_col1, .grid-df_col2, .grid-df_col3, .grid-df_col4, .grid-df_col5, .grid-df_col6, .grid-df_col7, .grid-df_col8, .grid-df_col9, .grid-df_col10, .grid-df_col11, .grid-df_col12, .grid-lg_col1, .grid-lg_col2, .grid-lg_col3, .grid-lg_col4, .grid-lg_col5, .grid-lg_col6, .grid-lg_col7, .grid-lg_col8, .grid-lg_col9, .grid-lg_col10, .grid-lg_col11, .grid-lg_col12, .grid-xl_col1, .grid-xl_col2, .grid-xl_col3, .grid-xl_col4, .grid-xl_col5, .grid-xl_col6, .grid-xl_col7, .grid-xl_col8, .grid-xl_col9, .grid-xl_col10, .grid-xl_col11, .grid-xl_col12, .grid-container {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box; }
 
-.grid-xs_col1, .grid-xs_col2, .grid-xs_col3, .grid-xs_col4, .grid-xs_col5, .grid-xs_col6, .grid-xs_col7, .grid-xs_col8, .grid-xs_col9, .grid-xs_col10, .grid-xs_col11, .grid-xs_col12, .grid-sm_col1, .grid-sm_col2, .grid-sm_col3, .grid-sm_col4, .grid-sm_col5, .grid-sm_col6, .grid-sm_col7, .grid-sm_col8, .grid-sm_col9, .grid-sm_col10, .grid-sm_col11, .grid-sm_col12, .grid-md_col1, .grid-md_col2, .grid-md_col3, .grid-md_col4, .grid-md_col5, .grid-md_col6, .grid-md_col7, .grid-md_col8, .grid-md_col9, .grid-md_col10, .grid-md_col11, .grid-md_col12, .grid-lg_col1, .grid-lg_col2, .grid-lg_col3, .grid-lg_col4, .grid-lg_col5, .grid-lg_col6, .grid-lg_col7, .grid-lg_col8, .grid-lg_col9, .grid-lg_col10, .grid-lg_col11, .grid-lg_col12, .grid-xl_col1, .grid-xl_col2, .grid-xl_col3, .grid-xl_col4, .grid-xl_col5, .grid-xl_col6, .grid-xl_col7, .grid-xl_col8, .grid-xl_col9, .grid-xl_col10, .grid-xl_col11, .grid-xl_col12 {
+.grid-xs_col1, .grid-xs_col2, .grid-xs_col3, .grid-xs_col4, .grid-xs_col5, .grid-xs_col6, .grid-xs_col7, .grid-xs_col8, .grid-xs_col9, .grid-xs_col10, .grid-xs_col11, .grid-xs_col12, .grid-sm_col1, .grid-sm_col2, .grid-sm_col3, .grid-sm_col4, .grid-sm_col5, .grid-sm_col6, .grid-sm_col7, .grid-sm_col8, .grid-sm_col9, .grid-sm_col10, .grid-sm_col11, .grid-sm_col12, .grid-md_col1, .grid-md_col2, .grid-md_col3, .grid-md_col4, .grid-md_col5, .grid-md_col6, .grid-md_col7, .grid-md_col8, .grid-md_col9, .grid-md_col10, .grid-md_col11, .grid-md_col12, .grid-df_col1, .grid-df_col2, .grid-df_col3, .grid-df_col4, .grid-df_col5, .grid-df_col6, .grid-df_col7, .grid-df_col8, .grid-df_col9, .grid-df_col10, .grid-df_col11, .grid-df_col12, .grid-lg_col1, .grid-lg_col2, .grid-lg_col3, .grid-lg_col4, .grid-lg_col5, .grid-lg_col6, .grid-lg_col7, .grid-lg_col8, .grid-lg_col9, .grid-lg_col10, .grid-lg_col11, .grid-lg_col12, .grid-xl_col1, .grid-xl_col2, .grid-xl_col3, .grid-xl_col4, .grid-xl_col5, .grid-xl_col6, .grid-xl_col7, .grid-xl_col8, .grid-xl_col9, .grid-xl_col10, .grid-xl_col11, .grid-xl_col12 {
   padding: 0;
   margin: 0 0 8px 0; }
   @media (min-width: 896px) {
-    .grid-xs_col1, .grid-xs_col2, .grid-xs_col3, .grid-xs_col4, .grid-xs_col5, .grid-xs_col6, .grid-xs_col7, .grid-xs_col8, .grid-xs_col9, .grid-xs_col10, .grid-xs_col11, .grid-xs_col12, .grid-sm_col1, .grid-sm_col2, .grid-sm_col3, .grid-sm_col4, .grid-sm_col5, .grid-sm_col6, .grid-sm_col7, .grid-sm_col8, .grid-sm_col9, .grid-sm_col10, .grid-sm_col11, .grid-sm_col12, .grid-md_col1, .grid-md_col2, .grid-md_col3, .grid-md_col4, .grid-md_col5, .grid-md_col6, .grid-md_col7, .grid-md_col8, .grid-md_col9, .grid-md_col10, .grid-md_col11, .grid-md_col12, .grid-lg_col1, .grid-lg_col2, .grid-lg_col3, .grid-lg_col4, .grid-lg_col5, .grid-lg_col6, .grid-lg_col7, .grid-lg_col8, .grid-lg_col9, .grid-lg_col10, .grid-lg_col11, .grid-lg_col12, .grid-xl_col1, .grid-xl_col2, .grid-xl_col3, .grid-xl_col4, .grid-xl_col5, .grid-xl_col6, .grid-xl_col7, .grid-xl_col8, .grid-xl_col9, .grid-xl_col10, .grid-xl_col11, .grid-xl_col12 {
+    .grid-xs_col1, .grid-xs_col2, .grid-xs_col3, .grid-xs_col4, .grid-xs_col5, .grid-xs_col6, .grid-xs_col7, .grid-xs_col8, .grid-xs_col9, .grid-xs_col10, .grid-xs_col11, .grid-xs_col12, .grid-sm_col1, .grid-sm_col2, .grid-sm_col3, .grid-sm_col4, .grid-sm_col5, .grid-sm_col6, .grid-sm_col7, .grid-sm_col8, .grid-sm_col9, .grid-sm_col10, .grid-sm_col11, .grid-sm_col12, .grid-md_col1, .grid-md_col2, .grid-md_col3, .grid-md_col4, .grid-md_col5, .grid-md_col6, .grid-md_col7, .grid-md_col8, .grid-md_col9, .grid-md_col10, .grid-md_col11, .grid-md_col12, .grid-df_col1, .grid-df_col2, .grid-df_col3, .grid-df_col4, .grid-df_col5, .grid-df_col6, .grid-df_col7, .grid-df_col8, .grid-df_col9, .grid-df_col10, .grid-df_col11, .grid-df_col12, .grid-lg_col1, .grid-lg_col2, .grid-lg_col3, .grid-lg_col4, .grid-lg_col5, .grid-lg_col6, .grid-lg_col7, .grid-lg_col8, .grid-lg_col9, .grid-lg_col10, .grid-lg_col11, .grid-lg_col12, .grid-xl_col1, .grid-xl_col2, .grid-xl_col3, .grid-xl_col4, .grid-xl_col5, .grid-xl_col6, .grid-xl_col7, .grid-xl_col8, .grid-xl_col9, .grid-xl_col10, .grid-xl_col11, .grid-xl_col12 {
       margin: 0 0 16px; } }
 
 .grid-gutter {
@@ -721,6 +754,138 @@ label {
   .grid-md_wrapreverse {
     flex-wrap: wrap-reverse; } }
 
+@media (min-width: 769px) {
+  .grid-df_col1 {
+    max-width: 8.33333%;
+    width: 8.33333%;
+    flex-basis: 8.33333%; }
+  .grid-df_col2 {
+    max-width: 16.66667%;
+    width: 16.66667%;
+    flex-basis: 16.66667%; }
+  .grid-df_col3 {
+    max-width: 25%;
+    width: 25%;
+    flex-basis: 25%; }
+  .grid-df_col4 {
+    max-width: 33.33333%;
+    width: 33.33333%;
+    flex-basis: 33.33333%; }
+  .grid-df_col5 {
+    max-width: 41.66667%;
+    width: 41.66667%;
+    flex-basis: 41.66667%; }
+  .grid-df_col6 {
+    max-width: 50%;
+    width: 50%;
+    flex-basis: 50%; }
+  .grid-df_col7 {
+    max-width: 58.33333%;
+    width: 58.33333%;
+    flex-basis: 58.33333%; }
+  .grid-df_col8 {
+    max-width: 66.66667%;
+    width: 66.66667%;
+    flex-basis: 66.66667%; }
+  .grid-df_col9 {
+    max-width: 75%;
+    width: 75%;
+    flex-basis: 75%; }
+  .grid-df_col10 {
+    max-width: 83.33333%;
+    width: 83.33333%;
+    flex-basis: 83.33333%; }
+  .grid-df_col11 {
+    max-width: 91.66667%;
+    width: 91.66667%;
+    flex-basis: 91.66667%; }
+  .grid-df_col12 {
+    max-width: 100%;
+    width: 100%;
+    flex-basis: 100%; }
+  .grid-df_offset_0 {
+    margin-left: 0%; }
+  .grid-df_offset_1 {
+    margin-left: 8.33333%; }
+  .grid-df_offset_2 {
+    margin-left: 16.66667%; }
+  .grid-df_offset_3 {
+    margin-left: 25%; }
+  .grid-df_offset_4 {
+    margin-left: 33.33333%; }
+  .grid-df_offset_5 {
+    margin-left: 41.66667%; }
+  .grid-df_offset_6 {
+    margin-left: 50%; }
+  .grid-df_offset_7 {
+    margin-left: 58.33333%; }
+  .grid-df_offset_8 {
+    margin-left: 66.66667%; }
+  .grid-df_offset_9 {
+    margin-left: 75%; }
+  .grid-df_offset_10 {
+    margin-left: 83.33333%; }
+  .grid-df_offset_11 {
+    margin-left: 91.66667%; }
+  .grid-df_row {
+    flex-direction: row; }
+  .grid-df_column {
+    flex-direction: column; }
+  .grid-df_rowreverse {
+    flex-direction: row-reverse; }
+  .grid-df_columnreverse {
+    flex-direction: column-reverse; }
+  .grid-df_justifycenter {
+    justify-content: center; }
+  .grid-df_justifystart {
+    justify-content: flex-start; }
+  .grid-df_justifyend {
+    justify-content: flex-end; }
+  .grid-df_justifyright {
+    justify-content: right; }
+  .grid-df_justifyleft {
+    justify-content: left; }
+  .grid-df_justifybaseline {
+    justify-content: baseline; }
+  .grid-df_justifybetween {
+    justify-content: space-between; }
+  .grid-df_justifyaround {
+    justify-content: space-around; }
+  .grid-df_justifyeven {
+    justify-content: space-evenly; }
+  .grid-df_justifystretch {
+    justify-content: stretch; }
+  .grid-df_alignitemscenter {
+    align-items: center; }
+  .grid-df_alignitemsstart {
+    align-items: flex-start; }
+  .grid-df_alignitemsend {
+    align-items: flex-end; }
+  .grid-df_alignitemsright {
+    align-items: right; }
+  .grid-df_alignitemsleft {
+    align-items: left; }
+  .grid-df_alignitemsbaseline {
+    align-items: baseline; }
+  .grid-df_alignselfcenter {
+    align-items: center; }
+  .grid-df_alignselfstart {
+    align-items: flex-start; }
+  .grid-df_alignselfend {
+    align-items: flex-end; }
+  .grid-df_alignselfright {
+    align-items: right; }
+  .grid-df_alignselfleft {
+    align-items: left; }
+  .grid-df_alignselfbaseline {
+    align-items: baseline; }
+  .grid-df_nowrap {
+    flex-wrap: nowrap; }
+  .grid-df_wrap {
+    flex-wrap: wrap; }
+  .grid-df_wrapreverse {
+    flex-wrap: wrap-reverse; } }
+
 @media (min-width: 1020px) {
   .grid-lg_col1 {
     max-width: 8.33333%;
@@ -989,12 +1154,12 @@ label {
   margin-bottom: 0; }
 
 .button, button, input[type="button"], input[type="reset"], input[type="submit"] {
+  padding: 15px 40px;
   font-weight: bold;
   font-size: 18px;
-  padding: 15px 40px;
+  line-height: 1;
   box-shadow: 0 1px 3px 2px rgba(3, 3, 3, 0.3);
-  transition: background-color .25s, box-shadow .25s;
-  line-height: 1; }
+  transition: background-color .25s, box-shadow .25s; }
   .button:hover, button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
     box-shadow: none; }
   .button.button-condensed, button.button-condensed, input[type="button"].button-condensed, input[type="reset"].button-condensed, input[type="submit"].button-condensed {
@@ -1020,12 +1185,18 @@ label {
       background-color: #513e25; }
     .button.button-tertiary-1:active, .button.button-tertiary-1:focus, button.button-tertiary-1:active, button.button-tertiary-1:focus, input[type="button"].button-tertiary-1:active, input[type="button"].button-tertiary-1:focus, input[type="reset"].button-tertiary-1:active, input[type="reset"].button-tertiary-1:focus, input[type="submit"].button-tertiary-1:active, input[type="submit"].button-tertiary-1:focus {
       background-color: #9b866c; }
-  .button.button-tertiary-2, .home-hero .home-form .button.wpcf7-submit, button.button-tertiary-2, .home-hero .home-form button.wpcf7-submit, input[type="button"].button-tertiary-2, .home-hero .home-form input[type="button"].wpcf7-submit, input[type="reset"].button-tertiary-2, .home-hero .home-form input[type="reset"].wpcf7-submit, input[type="submit"].button-tertiary-2, .home-hero .home-form input[type="submit"].wpcf7-submit {
+  .button.button-tertiary-2, .featured-content .hentry.has-post-thumbnail .button.button-tertiary-2, .featured-content .hentry.has-post-thumbnail .home-hero .home-form .button.wpcf7-submit, .home-hero .home-form .featured-content .hentry.has-post-thumbnail .button.wpcf7-submit,
+  .page-template-panel-page .hentry.has-post-thumbnail .button.button-tertiary-2,
+  .page-template-panel-page .hentry.has-post-thumbnail .home-hero .home-form .button.wpcf7-submit, .home-hero .home-form
+  .page-template-panel-page .hentry.has-post-thumbnail .button.wpcf7-submit, .home-hero .home-form .button.wpcf7-submit, button.button-tertiary-2, .home-hero .home-form button.wpcf7-submit, input[type="button"].button-tertiary-2, .home-hero .home-form input[type="button"].wpcf7-submit, input[type="reset"].button-tertiary-2, .home-hero .home-form input[type="reset"].wpcf7-submit, input[type="submit"].button-tertiary-2, .home-hero .home-form input[type="submit"].wpcf7-submit {
     background-color: #FFD8A6;
     color: #030303; }
-    .button.button-tertiary-2:hover, .home-hero .home-form .button.wpcf7-submit:hover, button.button-tertiary-2:hover, .home-hero .home-form button.wpcf7-submit:hover, input[type="button"].button-tertiary-2:hover, .home-hero .home-form input[type="button"].wpcf7-submit:hover, input[type="reset"].button-tertiary-2:hover, .home-hero .home-form input[type="reset"].wpcf7-submit:hover, input[type="submit"].button-tertiary-2:hover, .home-hero .home-form input[type="submit"].wpcf7-submit:hover {
+    .button.button-tertiary-2:hover, .featured-content .hentry.has-post-thumbnail .button.button-tertiary-2:hover,
+    .page-template-panel-page .hentry.has-post-thumbnail .button.button-tertiary-2:hover, .home-hero .home-form .button.wpcf7-submit:hover, button.button-tertiary-2:hover, .home-hero .home-form button.wpcf7-submit:hover, input[type="button"].button-tertiary-2:hover, .home-hero .home-form input[type="button"].wpcf7-submit:hover, input[type="reset"].button-tertiary-2:hover, .home-hero .home-form input[type="reset"].wpcf7-submit:hover, input[type="submit"].button-tertiary-2:hover, .home-hero .home-form input[type="submit"].wpcf7-submit:hover {
       background-color: #b39875; }
-    .button.button-tertiary-2:active, .home-hero .home-form .button.wpcf7-submit:active, .button.button-tertiary-2:focus, .home-hero .home-form .button.wpcf7-submit:focus, button.button-tertiary-2:active, .home-hero .home-form button.wpcf7-submit:active, button.button-tertiary-2:focus, .home-hero .home-form button.wpcf7-submit:focus, input[type="button"].button-tertiary-2:active, .home-hero .home-form input[type="button"].wpcf7-submit:active, input[type="button"].button-tertiary-2:focus, .home-hero .home-form input[type="button"].wpcf7-submit:focus, input[type="reset"].button-tertiary-2:active, .home-hero .home-form input[type="reset"].wpcf7-submit:active, input[type="reset"].button-tertiary-2:focus, .home-hero .home-form input[type="reset"].wpcf7-submit:focus, input[type="submit"].button-tertiary-2:active, .home-hero .home-form input[type="submit"].wpcf7-submit:active, input[type="submit"].button-tertiary-2:focus, .home-hero .home-form input[type="submit"].wpcf7-submit:focus {
+    .button.button-tertiary-2:active, .featured-content .hentry.has-post-thumbnail .button.button-tertiary-2:active,
+    .page-template-panel-page .hentry.has-post-thumbnail .button.button-tertiary-2:active, .home-hero .home-form .button.wpcf7-submit:active, .button.button-tertiary-2:focus, .featured-content .hentry.has-post-thumbnail .button.button-tertiary-2:focus,
+    .page-template-panel-page .hentry.has-post-thumbnail .button.button-tertiary-2:focus, .home-hero .home-form .button.wpcf7-submit:focus, button.button-tertiary-2:active, .home-hero .home-form button.wpcf7-submit:active, button.button-tertiary-2:focus, .home-hero .home-form button.wpcf7-submit:focus, input[type="button"].button-tertiary-2:active, .home-hero .home-form input[type="button"].wpcf7-submit:active, input[type="button"].button-tertiary-2:focus, .home-hero .home-form input[type="button"].wpcf7-submit:focus, input[type="reset"].button-tertiary-2:active, .home-hero .home-form input[type="reset"].wpcf7-submit:active, input[type="reset"].button-tertiary-2:focus, .home-hero .home-form input[type="reset"].wpcf7-submit:focus, input[type="submit"].button-tertiary-2:active, .home-hero .home-form input[type="submit"].wpcf7-submit:active, input[type="submit"].button-tertiary-2:focus, .home-hero .home-form input[type="submit"].wpcf7-submit:focus {
       background-color: #fde0bc; }
   .button.button-tertiary-3, button.button-tertiary-3, input[type="button"].button-tertiary-3, input[type="reset"].button-tertiary-3, input[type="submit"].button-tertiary-3 {
     background-color: #69A2BF;
@@ -1064,33 +1235,28 @@ input[type="text"], input[type="email"], input[type="number"] {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  color: #F8F4F0;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 .icon-garage:before {
-  content: "\e900";
-  color: #000; }
+  content: "\e900"; }
 
 .icon-key:before {
-  content: "\e901";
-  color: #000; }
+  content: "\e901"; }
 
 .icon-mail:before {
-  content: "\e902";
-  color: #000; }
+  content: "\e902"; }
 
 .icon-money:before {
-  content: "\e903";
-  color: #000; }
+  content: "\e903"; }
 
 .icon-paddle-left:before {
-  content: "\e904";
-  color: #000; }
+  content: "\e904"; }
 
 .icon-paddle-right:before {
-  content: "\e905";
-  color: #000; }
+  content: "\e905"; }
 
 .site-main .page:first-child {
   padding-top: 160px; }
@@ -1128,7 +1294,7 @@ input[type="text"], input[type="email"], input[type="number"] {
     justify-content: center;
     align-items: center;
     display: flex; }
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     .content-bleed.su-row {
       margin-bottom: 0; } }
 
@@ -1139,9 +1305,9 @@ input[type="text"], input[type="email"], input[type="number"] {
     background-color: #030303; }
 
 .site-header {
-  background: none;
-  border-bottom: none;
   padding-bottom: 0;
+  border-bottom: none;
+  background: none;
   z-index: 1;
   position: relative; }
   .site-header .contact-header-wrapper {
@@ -1154,20 +1320,20 @@ input[type="text"], input[type="email"], input[type="number"] {
       .site-header .contact-header-wrapper {
         display: block; } }
     .site-header .contact-header-wrapper .header-contact {
+      height: 72px;
+      padding-right: 16px;
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      height: 72px;
-      background-color: #285973;
-      padding-right: 16px; }
+      background-color: #285973; }
       .site-header .contact-header-wrapper .header-contact .button-wrapper {
         display: inline-block; }
       .site-header .contact-header-wrapper .header-contact .contact-email,
       .site-header .contact-header-wrapper .header-contact .contact-phone {
-        color: #F8F4F0;
+        padding-right: 8px;
         margin: 0 8px;
-        font-size: 14px;
-        padding-right: 8px; }
+        color: #F8F4F0;
+        font-size: 14px; }
       .site-header .contact-header-wrapper .header-contact .button {
         color: #F8F4F0;
         font-size: 16px;
@@ -1195,11 +1361,11 @@ input[type="text"], input[type="email"], input[type="number"] {
             border: 4px solid #F8F4F0;
             border-radius: 50%; } }
     .site-header .menu-header-wrapper .site-menu {
+      width: 100%;
+      height: 72px;
       display: flex;
       justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 72px; }
+      align-items: center; }
       .site-header .menu-header-wrapper .site-menu .main-navigation {
         margin-top: 0;
         display: none; }
@@ -1207,25 +1373,25 @@ input[type="text"], input[type="email"], input[type="number"] {
           .site-header .menu-header-wrapper .site-menu .main-navigation {
             display: block; } }
       .site-header .menu-header-wrapper .site-menu .primary-menu a {
-        color: white;
+        padding: 15px 0;
         border-bottom: none;
-        padding: 15px 0; }
+        color: #fff; }
     .site-header .menu-header-wrapper .header-contact {
       display: flex;
       justify-content: flex-end; }
     .site-header .menu-header-wrapper .menu-toggle {
-      background-image: url("images/hamburger.png");
-      background-size: 57px 38px;
       height: 38px;
       width: 57px;
-      position: absolute;
       padding: 0;
-      background-color: transparent;
       border: none;
-      box-shadow: none;
-      font-size: 0;
+      background-image: url("images/hamburger.png");
+      background-size: 57px 38px;
+      background-color: transparent;
+      position: absolute;
       right: 8px;
-      bottom: 16px; }
+      bottom: 16px;
+      font-size: 0;
+      box-shadow: none; }
       @media (min-width: 1020px) {
         .site-header .menu-header-wrapper .menu-toggle {
           display: none; } }
@@ -1243,8 +1409,8 @@ input[type="text"], input[type="email"], input[type="number"] {
     padding: 0; }
 
 .widget-footer-bottom-area {
-  background: #285973;
   padding: 32px 0;
+  background: #285973;
   color: #F8F4F0; }
   .widget-footer-bottom-area .widget_text {
     padding: 0; }
@@ -1292,35 +1458,35 @@ input[type="text"], input[type="email"], input[type="number"] {
     .home-hero .home-form label {
       width: 100%; }
     .home-hero .home-form .wpcf7-submit {
-      margin-top: 14px;
-      width: 100%; }
+      width: 100%;
+      margin-top: 14px; }
   .home-hero .wpcf7 {
-    position: relative;
     max-width: 795px;
+    position: relative;
     margin: 0 auto; }
     .home-hero .wpcf7 .wpcf7-not-valid {
       border-radius: 0;
       border-color: #f00; }
     .home-hero .wpcf7 .wpcf7-not-valid-tip {
-      background: #f00;
-      color: #F8F4F0;
       padding: 4px;
-      border: 4px solid #f00; }
+      border: 4px solid #f00;
+      background: #f00;
+      color: #F8F4F0; }
   .home-hero .wpcf7-response-output {
-    top: 0;
     height: 100%;
+    border: none;
     margin: 0;
+    top: 0;
     position: absolute;
     align-content: center;
     justify-content: center;
-    flex-direction: column;
-    border: none; }
+    flex-direction: column; }
     .home-hero .wpcf7-response-output.wpcf7-validation-errors {
       display: none !important; }
     .home-hero .wpcf7-response-output.wpcf7-validation-errors {
-      color: #f00;
+      padding: 8px;
       background: rgba(248, 244, 240, 0.8);
-      padding: 8px; }
+      color: #f00; }
 
 .sent .wpcf7-response-output {
   display: flex; }
@@ -1339,21 +1505,21 @@ input[type="text"], input[type="email"], input[type="number"] {
   .post-70 .content-bleed .uris-slider-title {
     display: none; }
   .post-70 .content-bleed .title-in-bg, .post-70 .content-bleed .desc-in-bg {
+    height: auto !important;
+    margin: 0 !important;
     font-family: 'Lato', Helvetica, sans-serif !important;
     background: none !important;
     text-align: left !important;
     color: #F8F4F0 !important;
-    margin: 0 !important;
-    line-height: 32px !important;
-    height: auto !important; }
+    line-height: 32px !important; }
   .post-70 .content-bleed #example3_102 .title-in-bg {
-    font-size: 24px !important;
     margin-top: 80px !important;
-    margin-left: 32px !important; }
+    margin-left: 32px !important;
+    font-size: 24px !important; }
   .post-70 .content-bleed #example3_102 .desc-in-bg {
     margin-bottom: 72px !important;
-    font-size: 20px !important;
-    margin-left: 32px !important; }
+    margin-left: 32px !important;
+    font-size: 20px !important; }
   .post-70 .content-bleed .sp-padding {
     padding: 16px; }
   .post-70 .content-bleed .sp-mask {
@@ -1365,15 +1531,15 @@ input[type="text"], input[type="email"], input[type="number"] {
     position: absolute;
     top: 0; }
   .post-70 .content-bleed .sp-layer {
-    position: relative !important;
     margin: none !important;
+    position: relative !important;
     top: 0 !important; }
   .post-70 .content-bleed .sp-arrows {
+    width: 136px;
+    margin-top: 0;
     top: auto;
     left: 32px;
-    margin-top: 0;
-    bottom: 64px;
-    width: 136px; }
+    bottom: 64px; }
   .post-70 .content-bleed .sp-fade-arrows {
     opacity: 1; }
   .post-70 .content-bleed .sp-arrow {
@@ -1390,10 +1556,10 @@ input[type="text"], input[type="email"], input[type="number"] {
     .post-70 .content-bleed .sp-arrow:after {
       display: none; }
     .post-70 .content-bleed .sp-arrow.sp-previous-arrow:before, .post-70 .content-bleed .sp-arrow.sp-next-arrow:before {
-      transform: none;
-      background-color: transparent !important;
       top: 10px;
-      left: -15px; }
+      left: -15px;
+      transform: none;
+      background-color: transparent !important; }
     .post-70 .content-bleed .sp-arrow.sp-previous-arrow {
       left: 0; }
       .post-70 .content-bleed .sp-arrow.sp-previous-arrow:before {
@@ -1407,15 +1573,15 @@ input[type="text"], input[type="email"], input[type="number"] {
       display: block !important; } }
   @media (min-width: 769px) {
     .post-70 .content-bleed .home-gallery {
-      position: absolute;
-      left: 50%;
       height: 100%;
+      left: 50%;
+      position: absolute;
       display: flex; }
       .post-70 .content-bleed .home-gallery .slider-pro {
+        height: 100%;
         position: absolute;
         top: 0;
-        left: 0;
-        height: 100%; }
+        left: 0; }
       .post-70 .content-bleed .home-gallery .sp-slides-container {
         height: 100%; }
       .post-70 .content-bleed .home-gallery .sp-slide {
@@ -1423,11 +1589,11 @@ input[type="text"], input[type="email"], input[type="number"] {
         flex-direction: column;
         justify-content: flex-end; }
       .post-70 .content-bleed .home-gallery .sp-slides, .post-70 .content-bleed .home-gallery .sp-slide {
-        position: absolute;
-        height: 100% !important; }
+        height: 100% !important;
+        position: absolute; }
       .post-70 .content-bleed .home-gallery .sp-mask {
-        position: absolute;
-        height: 100% !important; }
+        height: 100% !important;
+        position: absolute; }
       .post-70 .content-bleed .home-gallery .sp-selected {
         z-index: 1; }
       .post-70 .content-bleed .home-gallery .sp-slide, .post-70 .content-bleed .home-gallery .sp-image-container, .post-70 .content-bleed .home-gallery .sp-image {
@@ -1494,17 +1660,17 @@ input[type="text"], input[type="email"], input[type="number"] {
     position: relative; }
     @media (min-width: 896px) {
       .post-114 .team-row .katb_meta_top {
+        width: 50%;
         position: absolute;
-        left: 50%;
-        width: 50%; } }
+        left: 50%; } }
   .post-114 .team-row .katb_author, .post-114 .team-row .katb_custom1 {
     text-align: center;
     color: #644b2b; }
   .post-114 .team-row .katb_author {
+    width: 100%;
     position: absolute;
     bottom: 0;
     font-size: 18px;
-    width: 100%;
     text-align: center; }
     .post-114 .team-row .katb_author:before {
       content: '- '; }
@@ -1515,24 +1681,24 @@ input[type="text"], input[type="email"], input[type="number"] {
     font-style: normal;
     position: relative; }
     .post-114 .team-row .katb_custom1:before {
+      margin-left: -18px;
+      margin-top: -18px;
       content: '“';
       color: #BF9969;
       position: absolute;
       top: 0;
       left: 50%;
-      font-size: 72px;
-      margin-left: -18px;
-      margin-top: -18px; }
+      font-size: 72px; }
   .post-114 .team-row .katb_test_text_basic p, .post-114 .team-row .katb_test_text p {
     line-height: 32px !important;
     font-size: 20px !important; }
 
 .katb_avatar, .katb_widget_avatar, .katb_avatar_round_image, .katb_widget_avatar_round_image {
-  display: block;
-  float: none;
   width: 100% !important;
   max-width: 218px;
-  margin: 0 auto 16px; }
+  margin: 0 auto 16px;
+  display: block;
+  float: none; }
   @media (min-width: 896px) {
     .katb_avatar, .katb_widget_avatar, .katb_avatar_round_image, .katb_widget_avatar_round_image {
       width: 50% !important;

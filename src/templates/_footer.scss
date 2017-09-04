@@ -1,5 +1,4 @@
 // footer
-
 // CTA
 .widget-footer-top-area {
 	padding: $gutter*8 0 $gutter*12;
@@ -19,10 +18,9 @@
 }
 
 // Contact and Copyright
-
 .widget-footer-bottom-area {
-	background: palette(secondary);
 	padding: $gutter*4 0;
+	background: palette(secondary);
 	color: $white;
 
 	.widget_text {

@@ -1,5 +1,4 @@
 // buttons for k5
-
 @function set-text-color($color) {
   @if (lightness($color) >= 60) {
     @return $black; // Lighter backgorund, return dark color
@@ -9,12 +8,12 @@
 }
 
 .button, button, input[type="button"], input[type="reset"], input[type="submit"] {
+  padding: 15px 40px;
   font-weight: bold;
   font-size: 18px;
-  padding: 15px 40px;
+  line-height: 1;
   box-shadow: 0 1px 3px 2px rgba($black, .3);
   transition: background-color .25s, box-shadow .25s;
-  line-height: 1;
 
   &:hover {
     box-shadow: none;

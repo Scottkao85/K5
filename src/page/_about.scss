@@ -1,12 +1,4 @@
 //*** about k5 ***//
-// hero
-.post-106,
-.post-110,
-.post-112,
-.post-114 {
-
-}
-
 .post-106 {
 
 }
@@ -59,9 +51,9 @@
 			position: relative;
 
 			@include breakpoint(md) {
+				width: 50%;
 				position: absolute;
 				left: 50%;
-				width: 50%;
 			}
 		}
 
@@ -71,10 +63,10 @@
 		}
 
 		.katb_author {
+			width: 100%;
 			position: absolute;
 			bottom: 0;
 			font-size: 18px;
-			width: 100%;
 			text-align: center;
 
 			&:before {
@@ -90,14 +82,14 @@
 			position: relative;
 
 			&:before {
+				margin-left: -18px;
+				margin-top: -18px;
 				content: '“';
 				color: palette(primary);
 				position: absolute;
 				top: 0;
 				left: 50%;
 				font-size: 72px;
-				margin-left: -18px;
-				margin-top: -18px;
 			}
 		}
 
@@ -109,15 +101,14 @@
 }
 
 .katb_avatar, .katb_widget_avatar, .katb_avatar_round_image, .katb_widget_avatar_round_image {
-	display: block;
-	float: none;
 	width: 100% !important;
 	max-width: 218px;
 	margin: 0 auto $gutter*2;
+	display: block;
+	float: none;
 
 	@include breakpoint(md) {
 		width: 50% !important;
 		margin-left: 0;
 	}
 }
-
