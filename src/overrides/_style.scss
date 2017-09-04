@@ -1,0 +1,99 @@
+/*
+Theme Name: K5
+Theme URI: https://wordpress.com/themes/shoreditch/
+Template: shoreditch
+Description: Shoreditch is a functional and responsive theme perfect for your business’s online presence. Although its main purpose is business, Shoreditch looks great as a personal blog theme too.
+Version: 1.1.1
+Author: Automattic
+Author URI: https://wordpress.com/themes/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: shoreditch
+Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, full-width-template, rtl-language-support, sticky-post, theme-options, translation-ready, blog, education
+*/
+
+.entry-header .entry-title {
+	display: none;
+}
+
+.hentry + .hentry,
+.page-template-panel-page .hentry + .has-post-thumbnail  {
+    margin-top: 0;
+}
+
+.hentry {
+    border-bottom: none;
+    margin: 0;
+    padding-top: 0;
+}
+
+.entry-hero-wrapper, .hentry-wrapper, .site-content-wrapper, .site-footer-wrapper, .site-header-wrapper, .site-content-wrapper .has-post-thumbnail .entry-header-wrapper, .widget-area-wrapper {
+	margin: 0 16px;
+	max-width: none;
+	width: auto;
+}
+
+.featured-content .hentry.has-post-thumbnail .button, .page-template-panel-page .hentry.has-post-thumbnail .button {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 40px;
+    box-shadow: 0 1px 3px 2px rgba(3, 3, 3, .3);
+    transition: background-color .25s, box-shadow .25s;
+    line-height: 1;
+    background-color: #FFD8A6;
+    color: #030303; }
+.featured-content .hentry.has-post-thumbnail .button, .page-template-panel-page .hentry.has-post-thumbnail .button:hover {
+  background-color: #b39875;
+  color: #030303;
+  box-shadow: none; }
+.featured-content .hentry.has-post-thumbnail .button, .page-template-panel-page .hentry.has-post-thumbnail .button:focus {
+  background-color: #fde0bc;
+  color: #030303;
+  box-shadow: none; }
+
+@media screen and (min-width: 1020px) {
+
+	.hentry {
+	    padding-bottom: 0;
+	    padding-top: 0;
+	}
+}
+
+@media screen and (min-width: 896px) {
+
+	.hentry {
+	    padding-bottom: 0;
+	    padding-top: 0;
+	}
+}
+
+@media screen and (min-width: 600px) {
+
+	.hentry {
+	    padding-top: 0;
+	    padding-bottom: 0;
+	    border-bottom: none;
+	    margin: 0;
+	    padding-top: 0;
+	}
+
+	.entry-hero-wrapper, .hentry-wrapper, .site-content-wrapper .has-post-thumbnail .entry-header-wrapper, .site-footer-wrapper, .site-header-wrapper, .widget-area-wrapper {
+	     width: auto;
+	     margin: 0 auto;
+	     padding: 0 16px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+
+	/* Layout */
+	.entry-hero-wrapper,
+	.hentry-wrapper,
+	.site-content-wrapper .has-post-thumbnail .entry-header-wrapper,
+	.site-footer-wrapper,
+	.site-header-wrapper,
+	.widget-area-wrapper {
+		width: 1170px;
+		max-width: none;
+	}
+}

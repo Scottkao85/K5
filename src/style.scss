@@ -1,4 +1,6 @@
 // main styles for k5
+@import 'overrides/style';
+
 @import 'shared/colors';
 @import 'shared/fonts';
 @import 'shared/breakpoints';
@@ -21,8 +23,8 @@
 
 Changes to the Shortcodes Ultimate [su-**]
 need to be kept in the plugin Custom
-CSS Panel in the dashboard. Maintained
-in comments:
+CSS Panel in the dashboard due to
+overriding issues. Maintained in comments:
 
 *******************
 
@@ -69,18 +71,6 @@ in comments:
 .su-column-size-4-5 {
     width: 81.2%;
 }
-
-*******************
-*******************
-*/
-
-/*
-*******************
-*******************
-
-Changes to the styles.css need
-to be kept in the child theme's
-style.css file.
 
 *******************
 *******************
