@@ -17,6 +17,12 @@ Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-heade
     margin-top: 0;
 }
 
+.hentry {
+    border-bottom: none;
+    margin: 0;
+    padding-top: 0;
+}
+
 .entry-hero-wrapper, .hentry-wrapper, .site-content-wrapper, .site-footer-wrapper, .site-header-wrapper, .site-content-wrapper .has-post-thumbnail .entry-header-wrapper, .widget-area-wrapper {
 	margin: 0 16px;
 	max-width: none;
