@@ -34,6 +34,9 @@
 }
 
 .content-bleed {
+	@media (min-width: 769px) {
+		display: flex;
+	}
 
 	&.su-row {
 		margin-left: -(2*$gutter);
