@@ -65,3 +65,12 @@
 		}
 	}
 }
+
+.back-top {
+	background-color: rgba($black, .8);
+	transition: .25s background-color $black;
+
+	&:hover {
+		background-color: $black;
+	}
+}
