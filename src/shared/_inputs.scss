@@ -1,0 +1,21 @@
+// inputs for k5
+
+input {
+  &[type="text"], &[type="email"], &[type="number"] {
+    background: rgba($white, .8);
+    border: 4px solid darken(palette(primary), 30%);
+    border-radius: 6px;
+    transition: background .25s, border .25s, box-shadow .5s;
+
+    &:hover {
+      background: $white;
+      border: 4px solid palette(primary);
+    }
+
+    &:focus, &:active {
+      background: $white;
+      box-shadow: 0 1px 3px 2px rgba($black, .3);
+      outline: none;
+    }
+  }
+}
