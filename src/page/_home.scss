@@ -63,7 +63,7 @@
     border: none;
 
     &.wpcf7-validation-errors {
-      position: relative;
+      display: none !important;
     }
 
     &.wpcf7-validation-errors {
