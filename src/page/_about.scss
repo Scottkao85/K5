@@ -1,29 +1,14 @@
 //*** about k5 ***//
 // hero
-// .post-106,
+.post-106,
 .post-110,
 .post-112,
 .post-114 {
-	margin: 0;
-	padding: 0;
-	.su-row {
-		display: flex;
-		align-items: strech;
-		// .su-column-size-1-2 {
-		// 	padding: 80px 32px;
-		// }
-	}
+
 }
 
 .post-106 {
-	.entry-content {
-		h1 {
-			width: 50%;
-		}
-		p {
-			width: 43%;
-		}
-	}
+
 }
 
 // about bay area
@@ -38,28 +23,18 @@
 
 // meet the team
 .post-114 {
-	h2 {
-		display: flex;
-		justify-content: center;
-		padding-top: 50px;
+	.team-header {
+		padding-bottom: $gutter*4;
 	}
-	.testimonial-entry {
-		display: flex;
-		flex-direction: column-reverse;
-		margin-bottom: 0;
-		.testimonial-entry-content {
-			margin-bottom: 0;
+
+	.team-row {
+		.su-column {
+			padding: 0 $gutter*4 $gutter*10;
 		}
-		.testimonial-entry-title {
-			display: flex;
-			justify-content: flex-end;
-		}
-		.testimonial-featured-image {
-			display: flex;
-			justify-content: flex-start;
+
+		.katb_test_wrap_basic {
+			padding: 0;
 			margin: 0;
-			width: 218px;
-			height: 228px;
 		}
 	}
 }
