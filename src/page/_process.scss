@@ -49,5 +49,15 @@
 
 // ways we've helped
 .post-150 {
+	.process-title {
+		padding-bottom: $gutter*5;
+		text-align: center;
+	}
 
+	.process-helped {
+		.su-column {
+			padding-top: 0;
+		}
+
+	}
 }
