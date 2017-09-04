@@ -1,11 +1,11 @@
 // main styles for k5
 @import 'shared/colors';
 @import 'shared/fonts';
+@import 'shared/breakpoints';
+@import 'shared/grid';
 @import 'shared/buttons';
 @import 'shared/inputs';
 @import 'shared/icons';
-@import 'shared/breakpoints';
-@import 'shared/grid';
 @import 'shared/content';
 
 @import 'templates/header';

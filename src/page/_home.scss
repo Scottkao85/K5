@@ -1,8 +1,5 @@
 //*** home page ***//
 // hero
-.post-49 {
-
-}
 
 .home-hero {
   text-align: center;
@@ -41,6 +38,18 @@
     position: relative;
     max-width: 795px;
     margin: 0 auto;
+
+    .wpcf7-not-valid {
+      border-radius: 0;
+      border-color: #f00;
+    }
+
+    .wpcf7-not-valid-tip {
+      background: #f00;
+      color: $white;
+      padding: 4px;
+      border: 4px solid #f00;
+    }
   }
 
   .wpcf7-response-output {
@@ -52,6 +61,17 @@
     justify-content: center;
     flex-direction: column;
     border: none;
+
+    &.wpcf7-validation-errors {
+      position: relative;
+    }
+
+    &.wpcf7-validation-errors {
+      color: #f00;
+      background: rgba($white, .8);
+      padding: $gutter;
+    }
+
   }
 }
 
