@@ -34,11 +34,14 @@
 
 			.contact-email,
 			.contact-phone {
-				padding-right: $gutter;
-				margin: 0 8px;
+				padding: 0 $gutter*2;
+				margin: 0;
 				color: $white;
 				font-size: 14px;
+			}
 
+			.contact-email {
+				border-right: 1px solid $white;
 			}
 			.button {
 				color: $white;
