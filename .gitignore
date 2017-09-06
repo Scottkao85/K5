@@ -1,4 +1,4 @@
 .git-ftp-ignore
 .git-ftp.log
 /node_modules
-main.css
+style.css
