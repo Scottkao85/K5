@@ -1500,7 +1500,10 @@ input[type="text"], input[type="email"], input[type="number"] {
   position: relative;
   overflow: hidden; }
   .post-70 .content-bleed .home-gallery {
-    display: block; }
+    display: none; }
+    @media (min-width: 600px) {
+      .post-70 .content-bleed .home-gallery {
+        display: block; } }
     @media (max-width: 768px) {
       .post-70 .content-bleed .home-gallery {
         padding: 0; } }
