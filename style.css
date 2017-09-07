@@ -1330,10 +1330,12 @@ input[type="text"], input[type="email"], input[type="number"] {
         display: inline-block; }
       .site-header .contact-header-wrapper .header-contact .contact-email,
       .site-header .contact-header-wrapper .header-contact .contact-phone {
-        padding-right: 8px;
-        margin: 0 8px;
+        padding: 0 16px;
+        margin: 0;
         color: #F8F4F0;
         font-size: 14px; }
+      .site-header .contact-header-wrapper .header-contact .contact-email {
+        border-right: 1px solid #F8F4F0; }
       .site-header .contact-header-wrapper .header-contact .button {
         color: #F8F4F0;
         font-size: 16px;
@@ -1498,7 +1500,10 @@ input[type="text"], input[type="email"], input[type="number"] {
   position: relative;
   overflow: hidden; }
   .post-70 .content-bleed .home-gallery {
-    display: block; }
+    display: none; }
+    @media (min-width: 600px) {
+      .post-70 .content-bleed .home-gallery {
+        display: block; } }
     @media (max-width: 768px) {
       .post-70 .content-bleed .home-gallery {
         padding: 0; } }

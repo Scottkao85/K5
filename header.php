@@ -16,6 +16,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700|Lato:400,700" rel="stylesheet">
 
 <?php wp_head(); ?>
 </head>
@@ -28,7 +29,7 @@
 		<div class="contact-header-wrapper">
 			<div class="header-contact">
 				<a href="mailto:k5family@live.net" class="contact-email">k5family@live.net</a>
-				<p class="contact-phone"><span>| </span> 925.524.2602</p>
+				<a href="tel:+1925.5242602" class="contact-phone">925.524.2602</a>
 				<div class="button-wrapper">
 					<button class="button button-primary button-condensed">Get a free quote</button>
 				</div>

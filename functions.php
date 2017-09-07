@@ -11,11 +11,3 @@ function my_theme_enqueue_styles() {
     );
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
-
-function main_styles() {
-
-	$custom_style = 'main-style';
-
-	wp_enqueue_style( $custom_style, get_stylesheet_directory_uri() . '/main.css');
-}
-add_action( 'wp_enqueue_scripts', 'main_styles', 15);

@@ -95,7 +95,12 @@
     overflow: hidden;
 
     .home-gallery {
-      display: block;
+      @include breakpoint(xs) {
+        display: none;
+      }
+      @include breakpoint(sm){
+        display: block;
+      }
 
       @media (max-width: 768px) {
         padding: 0;
