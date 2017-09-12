@@ -1,32 +1,12 @@
-// header
+// header element
 .site-header {
 	padding-bottom: 0;
 	border-bottom: none;
 	background: none;
 	z-index: 1;
 	position: relative;
-
-	.main-navigation {
-		margin-top: 0;
-
-		ul {
-			@include breakpoint(md) {
-				display: block;
-				text-align: center;
-			}
-		}
-
-		li {
-			&:first-child {
-				border:none;
-			}
-
-			@include breakpoint(md) {
-				display: inline-block;
-			}
-		}
-	}
-
+	
+	// custom top nav
 	.contact-header-wrapper {
 		width: 100%;
 		background-color: palette(secondary);
@@ -72,6 +52,7 @@
 		}
 	}
 
+	// built in branding section
 	.menu-header-wrapper {
 		position: relative;
 
@@ -99,6 +80,7 @@
 			}
 		}
 
+		// wraps main nav
 		.site-menu {
 			width: 100%;
 			height: $gutter*9;
@@ -177,6 +159,33 @@
 			}
 		}
 	}
+
+	// nav element
+	.main-navigation {
+		margin-top: 0;
+
+		ul {
+			@include breakpoint(md) {
+				display: block;
+				text-align: center;
+			}
+		}
+
+		li {
+			&:first-child {
+				border:none;
+			}
+
+			@include breakpoint(md) {
+				display: inline-block;
+			}
+
+			a {
+				font-weight: normal;
+			}
+		}
+	}
+
 }
 
 .back-top {
