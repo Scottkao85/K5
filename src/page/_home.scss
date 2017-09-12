@@ -8,6 +8,12 @@
     margin: 0 auto;
   }
 
+  .serving {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
   .home-contact {
     padding-top: 40px;
 
@@ -68,6 +74,13 @@
       padding: $gutter;
       background: rgba($white, .8);
       color: #f00;
+    }
+
+    &.wpcf7-mail-sent-ok {
+      background: palette(tertiary-3);
+      border-radius: $gutter;
+      font-size: 30px;
+      line-height: 36px;
     }
 
   }
