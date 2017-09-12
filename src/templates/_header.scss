@@ -62,7 +62,7 @@
 			margin: 0;
 
 			@include breakpoint(md) {
-				bottom: $gutter*3;
+				top: -$gutter*7;
 				left: $gutter*2;
 			}
 
@@ -83,15 +83,24 @@
 		// wraps main nav
 		.site-menu {
 			width: 100%;
-			height: $gutter*9;
 			display: block;
 			background-color: rgba(mix(palette(primary), black, 30%), .5);
 
 			@include breakpoint-max(df) {
+				height: $gutter*9;
 				background-color: mix(palette(secondary), black, 70%);
 			}
 
 			.primary-menu{	
+				border:none;
+				font-size: 0;
+
+				a {
+					padding: 15px 0;
+					border-bottom: none;
+					color: $bright-white;
+				}
+
 				@include breakpoint-max(df) {
 					padding: 0 $gutter*2;
 					border-bottom: 1px solid $white;
@@ -117,20 +126,11 @@
 				@include breakpoint-max(df) {
 					position: relative;
 					z-index: -1;
+					height: 72px;
 				}
 
 				@include breakpoint(md) {
 					transform: translate(0, 0);
-				}
-			}
-
-			.primary-menu {
-				border:none;
-
-				a {
-					padding: 15px 0;
-					border-bottom: none;
-					color: $bright-white;
 				}
 			}
 		}
@@ -178,6 +178,17 @@
 
 			@include breakpoint(md) {
 				display: inline-block;
+				padding: 0 $gutter*2;
+				margin: 0;
+				transition: background .25s;
+
+				&.current_page_item {
+					background: rgba($black,.5);
+				}
+
+				&:hover {
+					background: rgba($white,.3);
+				}
 			}
 
 			a {
