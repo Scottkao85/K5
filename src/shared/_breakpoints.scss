@@ -6,11 +6,12 @@ $view-xlarge: 1200px;
 $view-class: "xs", "sm", "md", "df", "lg", "xl";
 
 @mixin breakpoint($class) {
+
 	@if $class == xs {
 		@content;
 	}
 
-	@else if $class == sm {
+	@if $class == sm {
 		@media (min-width: $view-small) { @content; }
 	}
 
@@ -28,5 +29,27 @@ $view-class: "xs", "sm", "md", "df", "lg", "xl";
 
 	@else if $class == xl {
 		@media (min-width: $view-xlarge) { @content; }
+	}
+}
+
+@mixin breakpoint-max($class) {
+	@if $class == xs {
+		@media (max-width: $view-small - 1) { @content; }
+	}
+
+	@else if $class == sm {
+		@media (max-width: $view-medium - 1) { @content; }
+	}
+
+	@else if $class == md {
+		@media (max-width: $view-default - 1) { @content; }
+	}
+
+	@else if $class == df {
+		@media (max-width: $view-medium - 1) { @content; }
+	}
+
+	@else if $class == lg {
+		@media (max-width: $view-large - 1) { @content; }
 	}
 }

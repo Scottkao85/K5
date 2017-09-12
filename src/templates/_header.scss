@@ -6,15 +6,34 @@
 	z-index: 1;
 	position: relative;
 
+	.main-navigation {
+		margin-top: 0;
+
+		ul {
+			@include breakpoint(md) {
+				display: block;
+				text-align: center;
+			}
+		}
+
+		li {
+			&:first-child {
+				border:none;
+			}
+
+			@include breakpoint(md) {
+				display: inline-block;
+			}
+		}
+	}
+
 	.contact-header-wrapper {
 		width: 100%;
 		background-color: palette(secondary);
 		position: relative;
 		border-bottom: $gutter/2 solid $white;
+		display: none;
 
-		@include breakpoint(xs) {
-			display: none;
-		}
 
 		@include breakpoint(md) {
 			display: block
@@ -26,7 +45,7 @@
 			display: flex;
 			justify-content: flex-end;
 			align-items: center;
-			background-color: palette(secondary);
+			background-color: mix(palette(secondary), black, 70%);
 
 			.button-wrapper {
 				display: inline-block;
@@ -44,12 +63,7 @@
 				border-right: 1px solid $white;
 			}
 			.button {
-				color: $white;
-				font-size: 16px;
-
-				@include breakpoint(xs) {
-					display: none;
-				}
+				display: none;
 
 				@include breakpoint(md) {
 					display: block;
@@ -63,53 +77,74 @@
 
 		.site-branding {
 			position: absolute;
+			padding: 0;
+			margin: 0;
 
 			@include breakpoint(md) {
 				bottom: $gutter*3;
 				left: $gutter*2;
 			}
 
-			@include breakpoint(xs) {
-				bottom: $gutter;
-			}
-
 			.custom-logo {
+				width: 56px;
+				border: 2px solid $white;
+				border-radius: 50%;
+				margin: $gutter 0 0 $gutter;
+				
 				@include breakpoint(md) {
 					width: 90px;
 					border: 4px solid $white;
 					border-radius: 50%;
-				}
-
-				@include breakpoint(xs) {
-					width: 60px;
-					border: 2px solid $white;
-					border-radius: 50%;
-					margin-left: $gutter;
-
 				}
 			}
 		}
 
 		.site-menu {
 			width: 100%;
-			height: 72px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
+			height: $gutter*9;
+			display: block;
+			background-color: rgba(mix(palette(primary), black, 30%), .5);
 
-			.main-navigation {
-				margin-top: 0;
+			@include breakpoint-max(df) {
+				background-color: mix(palette(secondary), black, 70%);
+			}
 
-				@include breakpoint(xs) {
-					display: none;
+			.primary-menu{	
+				@include breakpoint-max(df) {
+					padding: 0 $gutter*2;
+					border-bottom: 1px solid $white;
+					background-color: rgba(mix(palette(primary), black, 30%), .5);
+					display: block !important;
+					opacity: 0;
+					transition: opacity .5s, transform .5s, background .5s;
+					transform: translate(0, -116px);
+				}
+			}
+
+			&.toggled-on {
+				.primary-menu {
+					opacity: 1;
+					
+					@include breakpoint-max(df) {
+						transform: translate(0, 72px);
+					}
+				}
+			}
+
+			.menu-menu-1-container {
+				@include breakpoint-max(df) {
+					position: relative;
+					z-index: -1;
 				}
 
 				@include breakpoint(md) {
-					display: block;
+					transform: translate(0, 0);
 				}
 			}
 
 			.primary-menu {
+				border:none;
+
 				a {
 					padding: 15px 0;
 					border-bottom: none;
@@ -124,24 +159,70 @@
 		}
 
 		.menu-toggle {
-			@include breakpoint(xs) {
-			    height: 38px;
-			    width: 57px;
-				padding: 0;
-				border: none;
-				background-image: url("images/hamburger.png");
-				background-size: 57px 38px;
-				background-color: transparent;
-				position: absolute;
-				right: $gutter;
-				bottom: $gutter*2;
-				font-size: 0;
-				box-shadow: none;
-			}
+		    height: 38px;
+		    width: 57px;
+			padding: 0;
+			border: none;
+			background-image: url("images/hamburger.png");
+			background-size: 57px 38px;
+			background-color: transparent;
+			position: absolute;
+			right: $gutter;
+			bottom: $gutter*2;
+			font-size: 0;
+			box-shadow: none;
 
 			@include breakpoint(lg) {
 				display: none;
 			}
+		}
+	}
+}
+
+.back-top {
+	background: $white;
+	bottom: $gutter*4;
+	top: auto;
+	right: $gutter*1.5;
+	font-size: 0;
+	width: 12px;
+	height: 10px;
+	padding: 0;
+	box-shadow: none;
+
+	&:before {
+		content: "top";
+		position: absolute;
+		font-size: 10px;
+		color: $white;
+		bottom: -($gutter*2);
+		margin-left: -10px;
+		text-shadow: 0 0 3px rgba($black, .6);
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		width: 0;
+		height: 0;
+		border-bottom: 12px solid $white;
+		border-top: 12px solid transparent;
+		border-right: 12px solid transparent;
+		border-left: 12px solid transparent;
+		position: absolute;
+		top: -24px;
+		left: -6px;
+	}
+
+	&:hover {
+		background: $bright-white;
+
+		&:before {
+			color: $bright-white;
+		}
+
+		&:after {
+			border-bottom-color: $bright-white;
 		}
 	}
 }
