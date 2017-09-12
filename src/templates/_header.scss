@@ -45,7 +45,7 @@
 			display: flex;
 			justify-content: flex-end;
 			align-items: center;
-			background-color: palette(secondary);
+			background-color: mix(palette(secondary), black, 70%);
 
 			.button-wrapper {
 				display: inline-block;
@@ -103,32 +103,36 @@
 			width: 100%;
 			height: $gutter*9;
 			display: block;
+			background-color: rgba(mix(palette(primary), black, 30%), .5);
 
-			.primary-menu{
+			@include breakpoint-max(df) {
+				background-color: mix(palette(secondary), black, 70%);
+			}
+
+			.primary-menu{	
 				@include breakpoint-max(df) {
+					padding: 0 $gutter*2;
+					border-bottom: 1px solid $white;
+					background-color: rgba(mix(palette(primary), black, 30%), .5);
 					display: block !important;
 					opacity: 0;
-					transition: opacity .5s;
+					transition: opacity .5s, transform .5s, background .5s;
+					transform: translate(0, -116px);
 				}
 			}
 
 			&.toggled-on {
 				.primary-menu {
 					opacity: 1;
-				}
-
-				.menu-menu-1-container {
-					transform: translate(0, 72px);
+					
+					@include breakpoint-max(df) {
+						transform: translate(0, 72px);
+					}
 				}
 			}
 
 			.menu-menu-1-container {
 				@include breakpoint-max(df) {
-					padding: 0 $gutter*2;
-					border-bottom: 1px solid $white;
-					background-color: rgba(mix(palette(primary), black, 30%), .5);
-					transition: opacity .5s, transform .5s;
-					transform: translate(0, -116px);
 					position: relative;
 					z-index: -1;
 				}
