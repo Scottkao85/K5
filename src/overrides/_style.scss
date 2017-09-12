@@ -12,6 +12,12 @@ Text Domain: shoreditch
 Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, full-width-template, rtl-language-support, sticky-post, theme-options, translation-ready, blog, education
 */
 
+.sticky-header {
+	.site-content {
+		padding-top: 0!important;
+	}
+}
+
 .hentry {
     border-bottom: none;
     margin: 0;
