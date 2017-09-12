@@ -178,3 +178,51 @@
 		}
 	}
 }
+
+.back-top {
+	background: $white;
+	bottom: $gutter*4;
+	top: auto;
+	right: $gutter*1.5;
+	font-size: 0;
+	width: 12px;
+	height: 10px;
+	padding: 0;
+	box-shadow: none;
+
+	&:before {
+		content: "top";
+		position: absolute;
+		font-size: 10px;
+		color: $white;
+		bottom: -($gutter*2);
+		margin-left: -10px;
+		text-shadow: 0 0 3px rgba($black, .6);
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		width: 0;
+		height: 0;
+		border-bottom: 12px solid $white;
+		border-top: 12px solid transparent;
+		border-right: 12px solid transparent;
+		border-left: 12px solid transparent;
+		position: absolute;
+		top: -24px;
+		left: -6px;
+	}
+
+	&:hover {
+		background: $bright-white;
+
+		&:before {
+			color: $bright-white;
+		}
+
+		&:after {
+			border-bottom-color: $bright-white;
+		}
+	}
+}
