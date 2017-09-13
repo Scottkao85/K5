@@ -31,7 +31,7 @@
 				<a href="mailto:k5family@live.net" class="contact-email">k5family@live.net</a>
 				<a href="tel:+1925.5242602" class="contact-phone">925.524.2602</a>
 				<div class="button-wrapper">
-					<button class="button button-primary button-condensed">Get a free quote</button>
+					<span class="su-lightbox contact-popup" data-mfp-src="#contact-form" data-mfp-type="inline"><button class="button button-primary button-condensed">Get a free quote</button></span>
 				</div>
 			</div>
 		</div>
