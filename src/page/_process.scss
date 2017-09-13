@@ -23,11 +23,13 @@
 .post-285,
 .post-287 {
 	.process-row {
+		background: linear-gradient(135deg, #142d3a, #0c1b23);
 		.process-icon {
 			text-align: center;
 		}
 
 		.process-content {
+			background: transparent;
 			a {
 				color: $white;
 				box-shadow: none;
@@ -66,6 +68,7 @@
 		}
 		.process-content {
 			order: 1;
+			background: transparent;
 		}
 	}
 }
