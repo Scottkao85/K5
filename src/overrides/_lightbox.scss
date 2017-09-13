@@ -1,0 +1,77 @@
+// lightbox overrides
+.mfp-bg {
+	z-index: 10000 !important;
+}
+
+.mfp-wrap {
+	z-index: 10001 !important;
+}
+
+.mfp-container {
+	padding: 0 10px !important;
+
+	@include breakpoint(df) {
+		padding: 0 50px !important;
+	}
+}
+
+.su-lightbox-content {
+	width: auto !important;
+	max-width: 1100px;
+
+	@include breakpoint(df) {
+		margin-top: 230px !important;
+	}
+}
+
+.mfp-close-btn-in {
+	.mfp-close {
+		@include font('sans-serif');
+	    font-weight: 100;
+	    font-size: 60px;
+	    color: $white !important;
+	}
+}
+
+// contact form lightbox
+.contact-form-popup {
+	padding: 0 !important;
+	color: $white !important;
+	text-align: left !important;
+
+	label {
+		width: 100%;
+		color: $white !important;
+	}
+
+	@include breakpoint(md) {
+		background-image: url('images/lightbox-contact.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.lightbox-content {
+		padding: 40px 20px;
+		background: palette(tertiary-3);
+
+		.wpcf7-submit {
+	      @extend .button-tertiary-2;
+	      margin: 0 auto;
+	    }
+
+		@include breakpoint(sm) {
+			padding: 40px;
+		}
+
+		@include breakpoint(md) {
+			width: 60%;
+		}
+
+		@include breakpoint-max(sm) {
+			h2 {
+				display: none;
+			}
+		}
+	}
+}
