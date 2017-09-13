@@ -1,0 +1,52 @@
+//*** 404 page ***//
+.error404 {
+  .site-content-wrapper {
+    width: auto !important;
+    padding: 0;
+    text-align: center;
+  }
+
+  .content-area {
+    width: auto !important;
+    padding: 160px $gutter*2 0 !important;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include breakpoint(md) {
+      padding-top: 230px;
+    }
+  }
+
+  .page-content {
+    padding: $gutter*10 $gutter*4;
+  }
+
+  h1{
+    position:relative;
+
+    &:after, &:before {
+      display: block;
+      position: absolute;
+      left: 50%;
+    }
+
+    &:before {
+      content: "!";
+      color: palette(primary);
+      font-weight: bold;
+      font-size: 32px;
+      margin-left: -6px;
+      top: -54px;
+    }
+
+    &:after {
+      content: "";
+      border: 3px solid palette(primary);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin-left: -25px;
+      top: -60px;
+    }
+  }
+}

@@ -12,7 +12,7 @@
 .font {
   @each $name, $color in $colors {
 	&-#{$name} {
-	color: set-text-color($color);
+	color: $color;
 	}
   }
 }
@@ -78,7 +78,16 @@ label {
 	text-transform: uppercase;
 }
 
-.gradient{
+a {
+	color: inherit;
+	font-weight: bold;
+
+	&:hover {
+		color: inherit;
+	}
+}
+
+.gradient {
 	h2, h3, h4, h5, h6, p, li {
 		color: $white;
 	}
