@@ -1,6 +1,19 @@
 //*** about k5 ***//
 .post-106 {
+	background-image: url('images/about-hero-small.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: $white;
+	text-shadow: 0 1px 4px rgba($black, .4);
 
+	@include breakpoint(sm) {
+		background-image: url('images/about-hero-medium.jpg');
+	}
+
+	@include breakpoint(md) {
+		background-image: url('images/about-hero-large.jpg');
+	}
 }
 
 // about bay area
@@ -10,7 +23,11 @@
 
 // our mission
 .post-112 {
-
+	.mission-row {
+		.su-column {
+			align-items: flex-start;
+		}
+	}
 }
 
 // meet the team

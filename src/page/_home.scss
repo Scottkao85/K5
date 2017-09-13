@@ -1,5 +1,26 @@
 //*** home page ***//
 // hero
+.post-49 {
+  background-image: url('images/home-hero-small.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: $white;
+  text-shadow: 0 1px 4px rgba($black, .4);
+
+  @include breakpoint(sm) {
+    background-image: url('images/home-hero-medium.jpg');
+  }
+
+  @include breakpoint(md) {
+    background-image: url('images/home-hero-large.jpg');
+  }
+
+  label {
+    color: $white;
+  }
+}
+
 .home-hero {
   text-align: center;
 

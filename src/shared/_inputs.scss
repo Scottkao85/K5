@@ -6,6 +6,7 @@ input {
     border: 4px solid darken(palette(primary), 30%);
     border-radius: 6px;
     transition: background .25s, border .25s, box-shadow .5s;
+    color: darken(palette(primary), 30%);
 
     &:hover {
       background: $white;
@@ -16,6 +17,31 @@ input {
       background: $white;
       box-shadow: 0 1px 3px 2px rgba($black, .3);
       outline: none;
+    }
+
+    &::placeholder {
+      color: rgba(darken(palette(primary), 30%), .3);
+      text-transform: uppercase;
+    }
+
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: rgba(darken(palette(primary), 30%), .3);
+      text-transform: uppercase;
+    }
+
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: rgba(darken(palette(primary), 30%), .3);
+      text-transform: uppercase;
+    }
+
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: rgba(darken(palette(primary), 30%), .3);
+      text-transform: uppercase;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+      color: rgba(darken(palette(primary), 30%), .3);
+      text-transform: uppercase;
     }
   }
 }

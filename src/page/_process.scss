@@ -1,7 +1,20 @@
 //*** How We Buy Homes ***//
 // hero
 .post-131 {
+	background-image: url('images/process-hero-small.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: $white;
+	text-shadow: 0 1px 4px rgba($black, .4);
 
+	@include breakpoint(sm) {
+		background-image: url('images/process-hero-medium.jpg');
+	}
+
+	@include breakpoint(md) {
+		background-image: url('images/process-hero-large.jpg');
+	}
 }
 
 // when you're ready
