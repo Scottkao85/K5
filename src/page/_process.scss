@@ -17,12 +17,13 @@
 	}
 }
 
-// when you're ready
-.post-139 {
+// all of the 'process' section
+.post-275,
+.post-280,
+.post-285,
+.post-287 {
 	.process-row {
-
 		.process-icon {
-			order: 1;
 			text-align: center;
 		}
 
@@ -30,12 +31,6 @@
 			a {
 				color: $white;
 				box-shadow: none;
-			}
-		}
-
-		&:nth-child(odd) {
-			.process-content {
-				order: 1;
 			}
 		}
 
@@ -56,6 +51,21 @@
 			@include breakpoint(md) {
 				font-size: 160px;
 			}
+		}
+	}
+}
+
+// style overwrite for ordering of icon
+.post-280,
+.post-287 {
+	.process-row {
+		background: linear-gradient(135deg, #604d35, #392e20);
+
+		.process-icon {
+			order: 2;
+		}
+		.process-content {
+			order: 1;
 		}
 	}
 }
