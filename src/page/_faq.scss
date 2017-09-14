@@ -1,7 +1,20 @@
 //*** home page ***//
 // hero
 .post-295 {
-	// background-image: url();
+	background-image: url('images/faq-hero-small.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: $white;
+	text-shadow: 0 1px 4px rgba($black, .4);
+
+	@include breakpoint(sm) {
+		background-image: url('images/faq-hero-medium.jpg');
+	}
+
+	@include breakpoint(md) {
+		background-image: url('images/faq-hero-large.jpg');
+	}
 }
 
 .post-301 {
@@ -15,18 +28,48 @@
 			border-top: none;
 		}
 	}
+
+	.su-accordion {
+		margin-left: $gutter*4;
+	}
+
+	.su-spoiler {
+		padding: $gutter*5 0;
+
+		.answer {
+			opacity: 1;
+			transition: opacity .5s, color .5s;
+		}
+	}
+
 	.su-spoiler-closed {
 		color: palette(secondary);
+
+		.answer {
+			opacity: 0;
+		}
 	}
+
 	.su-spoiler-icon {
 		font-size: 24px;
 		line-height: 48px;
 	}
+
 	.su-spoiler-title {
-	    font-size: 36px;
-	    line-height: 48px;
+		padding-left: $gutter*4 !important;
+		margin-left: -$gutter*4;
+	    font-weight: normal;
+	    transition: color .5s;
+	    font-size: 24px;
+	    line-height: 30px;
+
+		@include breakpoint(sm) {
+		    font-size: 36px;
+		    line-height: 48px;	
+		}
 	}
 
 	.su-spoiler-content {
+		padding: 0 !important;
 	}
 }
