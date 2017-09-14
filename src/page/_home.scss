@@ -310,6 +310,12 @@
 
 // peace of mind
 .post-80 {
+  background: #4A7E93;
+
+  @include breakpoint-max(sm) {
+    background-size: contain !important;
+    background-position: bottom !important;
+  }
 
   &.hentry.has-post-thumbnail{
     color: $white;
@@ -342,6 +348,10 @@
         &:last-child:after {
           display: none;
         }
+      }
+
+      @include breakpoint-max(sm) {
+        text-align: left;
       }
     }
 
