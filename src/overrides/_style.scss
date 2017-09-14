@@ -79,6 +79,15 @@ Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-heade
     }
 }
 
+.comment-content a, .comment-reply-title small a, .entry-content a, .entry-footer a:focus, .entry-footer a:hover, .entry-summary a, .logged-in-as a, .pingback .comment-body > a, .site-info a:focus, .site-info a:hover, .taxonomy-description a {
+	box-shadow: none;
+	color: inherit;
+
+	&:hover, &:active, &:focus {
+		box-shadow: 0 1px 0 0;
+	}
+}
+
 @include breakpoint(sm) {
 	.hentry {
 	    padding-top: 0;

@@ -58,17 +58,18 @@
 				z-index: 1;
 				padding: 0;
 				margin: 0 $gutter;;
+				top: $gutter*2;
 				left: 0;
-
-				@include breakpoint(md) {
-					top: $gutter*2;
-				}
-
 				.custom-logo {
 					width: 56px;
 					border: 2px solid $white;
 					border-radius: 50%;
-					margin: $gutter 0;
+					margin: $gutter 0 0 $gutter;
+					background-color: mix(palette(secondary), black, 70%);
+
+					@include breakpoint(md) {
+						top: $gutter*2;
+					}
 
 					@include breakpoint(md) {
 						width: 90px;

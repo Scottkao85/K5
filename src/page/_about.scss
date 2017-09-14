@@ -18,7 +18,18 @@
 
 // about bay area
 .post-110 {
+	.bay-area-image {
+		@include breakpoint-max(sm) {
+			padding-bottom: 0;
+		}
 
+		img {
+			max-width: 500px;
+			width: 100%;
+			margin: 0 auto;
+			display: block;
+		}
+	}
 }
 
 // our mission
@@ -37,7 +48,7 @@
 	}
 
 	.team-row {
-		padding: 0 $gutter*2;
+		padding: $gutter*5 $gutter*2 0;
 		display: block;
 
 		.su-column {
@@ -64,13 +75,17 @@
 		}
 
 		.katb_meta_top {
-			padding: $gutter*4 $gutter;
 			position: relative;
 
 			@include breakpoint(md) {
 				width: 50%;
 				position: absolute;
 				left: 50%;
+				margin-top: $gutter*3;
+			}
+
+			@include breakpoint(lg) {
+				left: 45%;
 			}
 		}
 
@@ -81,10 +96,9 @@
 
 		.katb_author {
 			width: 100%;
-			position: absolute;
-			bottom: 0;
 			font-size: 18px;
 			text-align: center;
+			line-height: 24px;
 
 			&:before {
 				content: '- ';
@@ -96,7 +110,9 @@
 			font-size: 28px;
 			font-weight: bold;
 			font-style: normal;
-			position: relative;
+			float: none;
+			display: block;
+			margin: 0 auto $gutter;
 
 			&:before {
 				margin-left: -18px;

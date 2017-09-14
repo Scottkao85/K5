@@ -87,6 +87,29 @@ a {
 	}
 }
 
+blockquote {
+	font-size: 14px;
+	line-height: 18px;
+	padding: 16px;
+	border: 2px solid $bright-white;
+	background: rgba($white, .4);
+	position:relative;
+
+	&:after {
+		content: '“ ”';
+		position: absolute;
+		font-size: 120px;
+		color: $bright-white;
+		bottom: -46px;
+		left: 50%;
+		margin-left: -52px;
+	}
+
+	p {
+		margin: 0;
+	}
+}
+
 .gradient {
 	h2, h3, h4, h5, h6, p, li {
 		color: $white;
