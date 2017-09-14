@@ -5,11 +5,11 @@
 	background: none;
 	z-index: 1;
 	position: relative;
-	
+
 	// custom top nav
 	.contact-header-wrapper {
 		width: 100%;
-		background-color: palette(secondary);
+		background-color: mix(palette(secondary), black, 70%);
 		position: relative;
 		border-bottom: $gutter/2 solid $white;
 		display: none;
@@ -20,15 +20,18 @@
 		}
 
 		.header-contact {
+			position: relative;
 			height: 72px;
-			padding-right: $gutter*2;
 			display: flex;
 			justify-content: flex-end;
 			align-items: center;
 			background-color: mix(palette(secondary), black, 70%);
+			max-width: 1200px;
+			margin: 0 auto;
 
 			.button-wrapper {
 				display: inline-block;
+				margin-right: $gutter;
 			}
 
 			.contact-email,
@@ -49,37 +52,36 @@
 					display: block;
 				}
 			}
+			.site-branding {
+				position: absolute;
+				max-width: 60px;
+				z-index: 1;
+				padding: 0;
+				margin: 0 $gutter;;
+				left: 0;
+
+				@include breakpoint(md) {
+					top: $gutter*2;
+				}
+
+				.custom-logo {
+					width: 56px;
+					border: 2px solid $white;
+					border-radius: 50%;
+					margin: $gutter 0;
+
+					@include breakpoint(md) {
+						width: 90px;
+						border: 4px solid $white;
+						border-radius: 50%;
+					}
+				}
+			}
 		}
 	}
 
 	// built in branding section
 	.menu-header-wrapper {
-		position: relative;
-
-		.site-branding {
-			position: absolute;
-			padding: 0;
-			margin: 0;
-
-			@include breakpoint(md) {
-				top: -$gutter*7;
-				left: $gutter*2;
-			}
-
-			.custom-logo {
-				width: 56px;
-				border: 2px solid $white;
-				border-radius: 50%;
-				margin: $gutter 0 0 $gutter;
-				
-				@include breakpoint(md) {
-					width: 90px;
-					border: 4px solid $white;
-					border-radius: 50%;
-				}
-			}
-		}
-
 		// wraps main nav
 		.site-menu {
 			width: 100%;
@@ -91,7 +93,7 @@
 				background-color: mix(palette(secondary), black, 70%);
 			}
 
-			.primary-menu{	
+			.primary-menu{
 				border:none;
 				font-size: 0;
 
@@ -115,7 +117,7 @@
 			&.toggled-on {
 				.primary-menu {
 					opacity: 1;
-					
+
 					@include breakpoint-max(df) {
 						transform: translate(0, 72px);
 					}

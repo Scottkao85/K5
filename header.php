@@ -27,7 +27,19 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="contact-header-wrapper">
+
 			<div class="header-contact">
+				<div class="site-branding">
+					<?php shoreditch_the_custom_logo(); ?>
+
+					<?php if ( is_front_page() && is_home() ) : ?>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<?php else : ?>
+						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+					<?php endif; ?>
+					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+				</div>
+				<!-- .site-branding -->
 				<a href="mailto:k5family@live.net" class="contact-email">k5family@live.net</a>
 				<a href="tel:+1925.5242602" class="contact-phone">925.524.2602</a>
 				<div class="button-wrapper">
@@ -36,17 +48,6 @@
 			</div>
 		</div>
 		<div class="menu-header-wrapper">
-			<div class="site-branding">
-				<?php shoreditch_the_custom_logo(); ?>
-
-				<?php if ( is_front_page() && is_home() ) : ?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php else : ?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php endif; ?>
-				<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-			</div>
-			<!-- .site-branding -->
 
 			<?php if ( has_nav_menu( 'primary' ) ) : ?>
 				<button id="menu-toggle" class="menu-toggle"><?php esc_html_e( 'Menu', 'shoreditch' ); ?></button>
