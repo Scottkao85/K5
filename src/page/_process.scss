@@ -23,6 +23,10 @@
 .post-285,
 .post-287 {
 	.process-row {
+		color: $white;
+		h2 {
+			color: $white;
+		}
 		.process-icon {
 			text-align: center;
 			@include breakpoint(xs) {
@@ -36,7 +40,6 @@
 		.process-content {
 			a {
 				color: $white;
-				box-shadow: none;
 			}
 		}
 
