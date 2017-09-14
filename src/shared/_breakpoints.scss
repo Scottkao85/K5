@@ -15,12 +15,12 @@ $view-class: "xs", "sm", "md", "df", "lg", "xl";
 		@media (min-width: $view-small) { @content; }
 	}
 
-	@else if $class == md {
-		@media (min-width: $view-medium) { @content; }
-	}
-
 	@else if $class == df {
 		@media (min-width: $view-default) { @content; }
+	}
+
+	@else if $class == md {
+		@media (min-width: $view-medium) { @content; }
 	}
 
 	@else if $class == lg {
@@ -38,10 +38,6 @@ $view-class: "xs", "sm", "md", "df", "lg", "xl";
 	}
 
 	@else if $class == sm {
-		@media (max-width: $view-medium - 1) { @content; }
-	}
-
-	@else if $class == md {
 		@media (max-width: $view-default - 1) { @content; }
 	}
 
@@ -49,7 +45,11 @@ $view-class: "xs", "sm", "md", "df", "lg", "xl";
 		@media (max-width: $view-medium - 1) { @content; }
 	}
 
-	@else if $class == lg {
+	@else if $class == md {
 		@media (max-width: $view-large - 1) { @content; }
+	}
+
+	@else if $class == lg {
+		@media (max-width: $view-xlarge - 1) { @content; }
 	}
 }

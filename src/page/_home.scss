@@ -119,7 +119,20 @@
 
 // proven
 .post-51 {
-
+  .fair-content {
+    @include breakpoint-max(sm) {
+      padding-bottom: 0;
+    }
+  }
+  
+  .fair-image {
+    img {
+      max-width: 500px;
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+  }
 }
 
 // handle hard part
