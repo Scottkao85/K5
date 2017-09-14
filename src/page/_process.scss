@@ -25,6 +25,12 @@
 	.process-row {
 		.process-icon {
 			text-align: center;
+			@include breakpoint(xs) {
+				padding-bottom: 0;
+			}
+			@include breakpoint(md) {
+				padding: 80px 32px;
+			}
 		}
 
 		.process-content {
@@ -45,7 +51,7 @@
 		}
 
 		[class^="icon-"]:before, [class*=" icon-"]:before {
-			color: palette(primary);
+			color: $white;
 			font-size: 80px;
 
 			@include breakpoint(md) {
@@ -55,9 +61,15 @@
 	}
 }
 
-// style overwrite for ordering of icon
+// style overwrite
+.post-275,
+.post-285 {
+	background: linear-gradient(135deg, #142d3a, #0c1b23);
+}
+
 .post-280,
 .post-287 {
+	background: linear-gradient(135deg, #604d35, #392e20);
 	.process-row {
 		.process-icon {
 			order: 2;
