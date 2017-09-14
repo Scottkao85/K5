@@ -5,7 +5,26 @@
 }
 
 .post-301 {
+	@include font('serif');
+	color: palette(primary);
+	.faq-title {
+		border-top: $gutter/4 solid palette(secondary);
+		padding: $gutter*3 0;
+
+		&:first-child {
+			border-top: none;
+		}
+	}
+	.su-spoiler-closed {
+		color: palette(secondary);
+	}
+	.su-spoiler-icon {
+		font-size: 24px;
+		line-height: 48px;
+	}
 	.su-spoiler-title {
+	    font-size: 36px;
+	    line-height: 48px;
 	}
 
 	.su-spoiler-content {
