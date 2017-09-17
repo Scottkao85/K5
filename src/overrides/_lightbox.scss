@@ -56,21 +56,21 @@
 		background: palette(tertiary-3);
 
 		.wpcf7-submit {
-	      @extend .button-tertiary-2;
-	      margin: 0 auto;
-	    }
+	      	@extend .button-tertiary-2;
+		      margin: 0 auto;
+		    }
 
-		@include breakpoint(sm) {
-			padding: 40px;
-		}
+			@include breakpoint(sm) {
+				padding: 40px;
+			}
 
-		@include breakpoint(md) {
-			width: 60%;
-		}
+			@include breakpoint(md) {
+				width: 60%;
+			}
 
-		@include breakpoint-max(sm) {
-			h2 {
-				display: none;
+			@include breakpoint-max(sm) {
+				h2 {
+					display: none;
 			}
 		}
 	}
