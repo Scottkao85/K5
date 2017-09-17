@@ -84,6 +84,7 @@ a {
 
 	&:hover {
 		color: inherit;
+		text-decoration: underline;
 	}
 }
 
@@ -93,7 +94,7 @@ blockquote {
 	padding: 16px;
 	border: 2px solid $bright-white;
 	background: rgba($white, .4);
-	position:relative;
+	position: relative;
 
 	&:after {
 		content: '“ ”';

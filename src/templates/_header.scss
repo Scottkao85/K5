@@ -205,6 +205,10 @@
 
 			a {
 				font-weight: normal;
+
+				&:hover {
+					text-decoration: none;
+				}
 			}
 		}
 	}

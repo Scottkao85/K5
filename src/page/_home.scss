@@ -145,7 +145,8 @@
       @include breakpoint(xs) {
         display: none;
       }
-      @include breakpoint(sm){
+      
+      @include breakpoint(sm) {
         display: block;
       }
 
