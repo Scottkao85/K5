@@ -17,10 +17,6 @@
   }
 }
 
-.text-center { text-align: center; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
-
 body {
 	@include font('sans-serif');
 	font-size: 20px;

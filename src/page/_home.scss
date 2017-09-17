@@ -33,6 +33,7 @@
     margin-top: 16px;
     font-size: 14px;
     line-height: 20px;
+    clear: both;
   }
 
   .home-contact {
@@ -109,6 +110,7 @@
 
 .sent {
   .wpcf7-response-output {
+    display: block;
     display: flex;
   }
 
@@ -145,7 +147,7 @@
       @include breakpoint(xs) {
         display: none;
       }
-      
+
       @include breakpoint(sm) {
         display: block;
       }

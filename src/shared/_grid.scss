@@ -45,6 +45,7 @@ $gutter-compensate-increase: $gutter*2;
 
       // Needed once to build the column width
       } @else {
+        float: left;
         max-width: $width;
         width: $width;
         flex-basis: $width;
