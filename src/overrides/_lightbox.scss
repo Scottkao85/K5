@@ -15,6 +15,58 @@
 	}
 }
 
+.wpcf7 {
+  max-width: 795px;
+  position: relative;
+  margin: 0 auto !important;
+
+  .wpcf7-not-valid {
+    border-radius: 0;
+    border-color: #f00;
+  }
+
+  .wpcf7-not-valid-tip {
+    padding: 4px;
+    border: 4px solid #f00;
+    background: #f00;
+    color: $white;
+  }
+}
+
+.wpcf7-response-output {
+  display: flex !important;
+
+  &.wpcf7-validation-errors {
+    display: none !important;
+  }
+}
+
+.sent {
+	.wpcf7-response-output {
+	  height: 100%;
+	  border: none !important;
+	  margin: 0 !important;
+	  top: 0;
+	  position: absolute;
+	  align-content: center;
+	  justify-content: center;
+	  flex-direction: column;
+
+	  &.wpcf7-validation-errors {
+	    padding: 8px;
+	    background: rgba($white, .8);
+	    color: #f00;
+	  }
+
+	  &.wpcf7-mail-sent-ok {
+	    background: palette(tertiary-3);
+	    border-radius: 8px;
+	    font-size: 30px;
+	    line-height: 36px;
+	  }
+	}	
+}
+
 .su-lightbox-content {
 	width: auto !important;
 	max-width: 1100px;
@@ -92,6 +144,10 @@
 	  align-content: center;
 	  justify-content: center;
 	  flex-direction: column;
+
+	  &.wpcf7-validation-errors {
+	    display: none !important;
+	  }
 
 	  &.wpcf7-mail-sent-ok {
 	    background: palette(tertiary-2);
