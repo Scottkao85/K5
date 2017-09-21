@@ -5,6 +5,7 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	color: $white;
+	background-color: #D4D3D4;
 	text-shadow: 0 1px 4px rgba($black, .4);
 
 	@include breakpoint(sm) {
