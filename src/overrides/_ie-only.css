@@ -1,8 +1,13 @@
 @media screen and (min-width:0\0) {
-	.wpcf7-response-output {
+
+	/*for the thank you page*/
+	.wpcf7-mail-sent-ok.wpcf7-display-none.wpcf7-response-output {
 		display: block !important;
 	}
-	body {
-		background-color: blue;
+
+	/*for gallery copy*/
+	.desc-in {
+		white-space: normal !important;
 	}
+
 }
