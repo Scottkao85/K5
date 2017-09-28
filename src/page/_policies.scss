@@ -1,0 +1,34 @@
+//*** terms page ***//
+.post-397, .post-421 {
+	@include breakpoint-max(sm) {
+		.su-row {
+			.su-column {
+				&:not(:last-child) {
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+.post-397 {
+	.rules-row {
+		border-bottom: 4px solid palette(primary);
+		margin-bottom: $gutter*4 !important;
+		overflow: auto;
+
+		@include breakpoint(sm) {
+			.grid-xs_col12 {
+
+				&:first-child {
+					padding-right: $gutter*4;
+				}
+
+				&:last-child {
+					padding-left: $gutter*4;
+				}
+			}
+		}	
+	}
+}
+

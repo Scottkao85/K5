@@ -1,11 +1,24 @@
 // styles for shared content boxes
+.no-pad-top 	{ padding-top: 0 !important; }
+.no-pad-bottom 	{ padding-bottom: 0 !important; }
+.no-pad-left 	{ padding-left: 0 !important; }
+.no-pad-right 	{ padding-right: 0 !important; }
+.no-pad-all 	{ padding: 0 !important; }
+
+.no-mar-top 	{ margin-top: 0 !important; }
+.no-mar-bottom 	{ margin-bottom: 0 !important; }
+.no-mar-left 	{ margin-left: 0 !important; }
+.no-mar-right 	{ margin-right: 0 !important; }
+.no-mar-all 	{ margin: 0 !important; }
+
+
 .site-main {
 	.page {
 		// padding for hero images
 		&:first-child {
 			padding-top: 160px;
 
-			@include breakpoint(md){
+			@include breakpoint(md) {
 				padding-top: 230px;
 			}
 
