@@ -1,4 +1,36 @@
 // styles for shared content boxes
+.site-main {
+	.page {
+		// padding for hero images
+		&:first-child {
+			padding-top: 230px;
+
+			.su-row {
+				.su-column {
+					padding-top: 0;
+				}
+			}
+		}
+	}
+}
+
+.site-content {
+    z-index: -1;
+    position: relative;
+
+    .content-area {
+    	margin-top: -72px;
+    }
+
+    @include breakpoint(md) {
+    	padding-top: 0 !important;
+
+    	.content-area {
+    		margin-top: 0;
+    	}
+    }
+}
+
 .content-bleed {
 
 	&.su-row {
