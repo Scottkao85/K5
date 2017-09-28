@@ -6,6 +6,10 @@
 	}
 
 	/*for gallery copy*/
+	.title-in {
+		white-space: normal !important;
+	}
+
 	.desc-in {
 		white-space: normal !important;
 	}
